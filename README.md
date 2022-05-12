@@ -1,6 +1,6 @@
 # Cursos Realizados
 
-**Plataforma:** [www.cursoemvideo.com](https://www.cursoemvideo.com/)
+**Plataforma:** [Curso em Video](https://www.cursoemvideo.com/)
 
 **Cursos:** 
 
@@ -14,7 +14,7 @@
 - Curso HTML5 e CSS3: módulo 1 (40 horas) - Curso de linguagem de marcação de HiperTexto e estilização de componentes escritos em linguagens de marcação;
 - Javascript (40 horas) - Curso de linguagem JavaScript.
 
-**Plataforma:** [www.rocketseat.com.br](https://www.rocketseat.com.br/)/
+**Plataforma:** [RocketSeat](https://www.rocketseat.com.br/)
 
 **Cursos:** 
 
@@ -29,13 +29,21 @@
   - Trilha - O guia estelar de Git;
   - Trilha - Guia estelar de GitHub
 
-**Plataforma:** [www.youtube.com/c/DevAprender](https://www.youtube.com/c/DevAprender)
+**Plataforma:** [Dev Aprender](https://www.youtube.com/c/DevAprender)
 
 **Cursos:** 
 
 - Curso de Git e GitHub
   - Atividades - [clique aqui](https://github.com/tthiagocarlosdev/Cursos_Concluidos/blob/main/notes/Curso_de_Git_e_Github-Dev_Aprender.md)
 - Curso JavaScript
+
+**Plataforma:** [Dicas para Devs](https://www.youtube.com/c/dicasparadevs)
+
+**Cursos:** 
+
+- Formulário com HTML, CSS e JavaScript
+- Curso de React
+  - Atividades  [clique aqui]()
 
 **Meu repósitório no GitHub:**
 

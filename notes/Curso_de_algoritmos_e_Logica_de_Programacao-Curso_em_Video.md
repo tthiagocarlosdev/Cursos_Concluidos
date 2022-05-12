@@ -61,8 +61,7 @@ var
 
 ​	4. **Não** pode conter **espaços** em branco;
 
-​	5. **Não** pode conter letras com **acentos**;
-
+	5. **Não** pode conter letras com **acentos**;
  	6. **Não** pode ser uma **palavra reservada**. (Algoritmo, Var, Inicio, Fimalgorismo)
 
 - **Tipos Primitivos:**
@@ -87,26 +86,19 @@ var
 
 ```pseudocode
 var
-
-  msg: caractere
-
-  msg <- “Olá, Mundo!”
-
-  escreva (msg)
-
-  “Olá, Mundo
+	msg: caractere
+	msg <- “Olá, Mundo!”
+	escreva (msg)
+	“Olá, Mundo
 ```
 
 - **Comandos de saída:**
 
 ```pseudocode
-  Escreva (“msg”)
-
+	Escreva (“msg”)
 	Escreva (msg)
-
 	Escreva (“mensagem”, msg)
-
-  Escreval (msg)
+	Escreval (msg)
 ```
 
 ## AULA #03 - COMANDO DE ENTRADA E OPERADORES
@@ -117,10 +109,8 @@ Exemplo 1:
 
 ```pseudocode
 Algoritmo “Meu nome”
-
 var
 	Nome: Caractere
-
 Inicio
 	Nome <- “Gustavo”
 	Escreva (“Muito prazer “, Nome)
@@ -137,10 +127,8 @@ Exemplo 2:
 
 ```pseudocode
 Algoritmo “Meu nome”
-
 var
 	Nome: Caractere
-
 Inicio
 	Escreva (“Digite seu nome: “)
 	Leia (Nome)
@@ -158,10 +146,8 @@ Prática 01:
 
 ```pseudocode
 algoritmo "aula_02.2_VALORES"
-
 var
    numero1, numero2, soma: Inteiro
-
 inicio
 	Escreva("Digite o 1º numero: ")
 	Leia(numero1)
@@ -204,11 +190,9 @@ Prática 02:
 
 ```pseudocode
 algoritmo "AULA_02.3_MEDIA"
-
 var
    numero1, numero2: Inteiro
    media: Real
-   
 inicio
 	Escreva("Digite o 1º numero: ")
 	Leia(numero1)
@@ -238,10 +222,8 @@ Prática 03:
 
 ```pseudocode
 algoritmo "AULA_02.4_FUNCOES_ARITMETICAS"
-
 var
 	A: Real
-
 inicio
 	// Valor Absoluto
 	Escreva("Valor Absoluto")
@@ -274,10 +256,8 @@ Prática 04:
 
 ```pseudocode
 algoritmo "AULA_02.5_CONVERSOR"
-
 var
    angulo, seno: Real
-
 inicio
 	Escreva("Informe um angulo: ")
 	Leia(angulo)
@@ -303,10 +283,8 @@ Fimalgoritmo
 
 ```pseudocode
 Algoritmo "Operadores Relacionais"
-
 Var
    a, b, c: inteiro
-
 Inicio
 	a <- 2
 	b <- 3
@@ -337,10 +315,8 @@ Fimalgoritmo
 
 ```pseudocode
 Algoritmo "Operadores Logicos"
-
 Var
    a, b, c: inteiro
-
 Inicio
 	a <- 2
 	b <- 3
@@ -367,11 +343,9 @@ Fimalgoritmo
 
 ```pseudocode
 Algoritmo "Teste dos triangulos"
-
 Var
    L1, L2, L3: real
    EQ, ES, TRI: logico
-
 Inicio
 	escreva ("Digite o primeiro lado: ")
 	leia(L1)
@@ -396,10 +370,8 @@ Fimalgoritmo
 
 ```pseudocode
 Algoritmo "creuza_01"
-
 Var
-   ano_atual, ano_nasc, idade: real
-
+	ano_atual, ano_nasc, idade: real
 Inicio
 	escreva ("Em que ano nós estamos? ")
 	leia(ano_atual)
@@ -414,10 +386,8 @@ Fimalgoritmo
 
 ```pseudocode
 Algoritmo "creuza_02"
-
 Var
-   reais, dolares: real
-
+	reais, dolares: real
 Inicio
 	escreva ("Quantos reais eu tenho? R$")
 	leia(reais)
@@ -430,10 +400,8 @@ Fimalgoritmo
 
 ```pseudocode
 Algoritmo "creuza_03"
-
 Var
-   temp_c, temp_f: real
-
+	temp_c, temp_f: real
 Inicio
 	escreva ("Digite a temperatura em grau Fahrenheit: ")
 	leia(temp_f)
@@ -446,10 +414,8 @@ Fimalgoritmo
 
 ```pseudocode
 Algoritmo "creuza_04"
-
 Var
-   valor, imposto: real
-
+	valor, imposto: real
 Inicio
 	escreva("Quanto custou o produto? US$")
 	leia(valor)
@@ -462,10 +428,8 @@ Fimalgoritmo
 
 ```pseudocode
 Algoritmo " creuza_05"
-
 Var
-   emprestimo, parcelas, valor_par: real
-
+	emprestimo, parcelas, valor_par: real
 Inicio
 	escreva ("Digite o valor emprestado R$")
 	leia(emprestimo)
@@ -505,10 +469,8 @@ FimSe
 
 ```pseudocode
 algoritmo "Calculo _Idade"
-
 var
-   atual, nasc, idade: inteiro
-
+	atual, nasc, idade: inteiro
 inicio
 	escreva("Em que ano estamos? ")
 	leia(atual)
@@ -548,10 +510,8 @@ FimSe
 
 ```pseudocode
 algoritmo "Par_ou_Impar"
-
 var
-   N: real
-
+	N: real
 inicio
 	escreva("Digite um número: ")
 	leia(N)
@@ -567,10 +527,8 @@ Fimalgoritmo
 
 ```pseudocode
 algoritmo "calculo_imc"
-
 var
-   M, A, IMC: real
-
+	M, A, IMC: real
 inicio
 	escreva("Digite seu peso: ")
 	leia(M)
@@ -590,10 +548,8 @@ Fimalgoritmo
 
 ```pseudocode
 algoritmo "apto_carteira"
-
 var
-   N, A, idade: inteiro
-
+	N, A, idade: inteiro
 inicio
 	escreval("------------------------------")
 	escreval("DEPARTAMENTO DE TRÂNSITO")
@@ -618,10 +574,8 @@ fimalgoritmo
 
 ```pseudocode
 algoritmo "ALUNO_APROVADO_REPROVADO"
-
 var
-   N1, N2, M: real
-
+	N1, N2, M: real
 inicio	
 	escreval("--------------------------------")
 	escreval("     ESCOLA THIAGO CARLOS")
@@ -689,10 +643,8 @@ FimSe
 
 ```pseudocode
 algoritmo "ALUNO_APROVADO_REPROVADO_02"
-
 var
-   N1, N2, M: real
-
+	N1, N2, M: real
 inicio
 	escreval("--------------------------------")
 	escreval("     ESCOLA THIAGO CARLOS")
@@ -721,10 +673,8 @@ fimalgoritmo
 
 ```pseudocode
 algoritmo "calculo_imc_02"
-
 var
-   M, A, IMC: real
-
+	M, A, IMC: real
 inicio
 	escreva("Digite seu peso: ")
 	leia(M)
@@ -781,11 +731,9 @@ FimEscolha
 
 ```pseudocode
 algoritmo "CRIANCA_ESPERANCA"
-
 var
-   D : inteiro
-   Valor : real
-
+	D : inteiro
+	Valor : real
 inicio
 	escreval ("---------------------------")
 	escreval ("     CRIANCA ESPERANCA     ")
@@ -821,12 +769,10 @@ fimalgoritmo
 
 ```pseudocode
 algoritmo "DEPENDENTES_FUNCIONARIO"
-
 var
-   nome: caractere
-   sal, nsal : real
-   dep : inteiro
-
+	nome: caractere
+	sal, nsal : real
+	dep : inteiro
 inicio
 	escreva ("Qual o nome do Funcionario? ")
 	leia (nome)
@@ -852,10 +798,8 @@ fimalgoritmo
 
 ```pseudocode
 algoritmo "APROVEITAMENTO_DE_UM_ALUNO"
-
 var
-   N1, N2, M: real
-
+	N1, N2, M: real
 inicio
 	escreval("--------------------------------")
 	escreval("     ESCOLA THIAGO CARLOS")
@@ -896,10 +840,8 @@ fimalgoritmo
 
 ```pseudocode
 algoritmo "BANGU_X_MADUREIRA"
-
 var
-   bangu, madu, dif : inteiro
-
+	bangu, madu, dif : inteiro
 inicio
 	escreval ("-------------------------")
 	escreva ("Quantos gols do BANGU? ")
@@ -926,10 +868,8 @@ fimalgoritmo
 
 ```pseudocode
 algoritmo "BANGU_X_MADUREIRA_02"
-
 var
-   bangu, madu, dif : inteiro
-
+	bangu, madu, dif : inteiro
 inicio
 	escreval ("-------------------------")
 	escreva ("Quantos gols do BANGU? ")
@@ -984,10 +924,8 @@ Liberado
 
 ```pseudocode
 algoritmo "CONTE_ATE_10"
-
 var
-   contador: inteiro
-
+	contador: inteiro
 inicio
 	contador <- 0
 	Enquanto (contador <= 10) faca
@@ -1002,10 +940,8 @@ fimalgoritmo
 
 ```pseudocode
 algoritmo "CONTE_DE_10_ATE_0"
-
 var
-   contador: inteiro
-
+	contador: inteiro
 inicio
 	contador <- 10
 	Enquanto (contador >= 0) faca
@@ -1020,10 +956,8 @@ fimalgoritmo
 
 ```pseudocode
 algoritmo "CONTE_DE_0_ATE_ONDE_QUISER"
-
 var
-   contador, v, s: inteiro
-
+	contador, v, s: inteiro
 inicio
 	escreva ("Digite até quanto quer contar: ")
 	leia (v)
@@ -1042,10 +976,8 @@ fimalgoritmo
 
 ```pseudocode
 algoritmo "SOMADOR_NUMERICO"
-
 var
-   cont, N, S: inteiro
-
+	cont, N, S: inteiro
 inicio
 	cont <- 1
 	S <- 0
@@ -1063,10 +995,8 @@ fimalgoritmo
 
 ```pseudocode
 algoritmo "SOMADOR_NUMERICO"
-
 var
-   cont, N, S, maior, menor: inteiro
-
+	cont, N, S, maior, menor: inteiro
 inicio
 	cont <- 1
 	S <- 0
@@ -1095,10 +1025,8 @@ fimalgoritmo
 
 ```pseudocode
 Algoritmo "CONVERSAO_MOEDA_4_VEZES"
-
 Var
 	reais, dolares, cont: real
-
 Inicio
 	cont <- 1
 	enquanto (cont <= 4) faca
@@ -1115,11 +1043,9 @@ Fimalgoritmo
 
 ```pseudocode
 Algoritmo "CONVERSAO_MOEDA_N_VEZES"
-
 Var
 	reais, dolares: real
 	cont, v: inteiro
-
 Inicio
 	cont <- 1
 	escreva ("Quantas conversões você quer converter? ")
@@ -1139,10 +1065,8 @@ Fimalgoritmo
 
 ```pseudocode
 algoritmo "CONTADOR_INTELIGENTE"
-
 var
-   cont, I, F: inteiro
-
+	cont, I, F: inteiro
 inicio
 	escrevaL("CONTAGEM INTELIGENTE")
 	ESCREVAL("---------------------")
@@ -1176,12 +1100,10 @@ fimalgoritmo
 
 ```pseudocode
 algoritmo "MELHOR_ALUNO"
-
 var
 	Q_alunos, contador: inteiro
 	Nota, M_N: real
 	N_aluno, MELHOR_ALUNO: caractere
-
 inicio
 	escreval("---------------------------")
 	escreval(" ESCOLA SANTA PACIENCIA   ")
@@ -1237,10 +1159,8 @@ Liberado
 
 ```pseudocode
 algoritmo "MINHA_TABUADA"
-
 var
-   cont, N, R: inteiro
-
+	cont, N, R: inteiro
 inicio
 	cont <- 1
 	escrevaL("---------------------")
@@ -1262,10 +1182,8 @@ fimalgoritmo
 
 ```pseudocode
 algoritmo "CONTA_NEGATIVOS"
-
 var
 	N, C, TotN: inteiro
-
 inicio
 	C <- 1
 	TotN <- 0
@@ -1285,10 +1203,8 @@ Fimalgoritmo
 
 ```pseudocode
 algoritmo "FATORIAL"
-
 var
 	contador, N, Fa: inteiro
-
 inicio
 	escreval("-------------------")
 	escreva("Escolha um numero: ")
@@ -1309,11 +1225,9 @@ fimalgoritmo
 
 ```pseudocode
 algoritmo "FATORIAL_REPETICAO"
-
 var
 	contador, N, Fa: inteiro
 	R: caractere
-
 inicio
 	repita
 	escreval("-------------------")
@@ -1339,10 +1253,8 @@ fimalgoritmo
 
 ```pseudocode
 algoritmo "NUMERO_PRIMO"
-
 var
 	N, contador, ContDiv: inteiro
-
 inicio
 	escreva("Digite um numero: ")
 	leia(N)
@@ -1368,10 +1280,8 @@ Fimalgoritmo
 
 ```pseudocode
 algoritmo "SUPER_CONTADOR"
-
 var
 	C, X, N: inteiro
-
 inicio
 	Repita
         escreval("==================")
@@ -1408,11 +1318,9 @@ Fimalgoritmo
 
 ```pseudocode
 algoritmo "ESCOLHENDO_PESSOAS"
-
 var
 	sexo, resp: caractere
 	idade, cabelo, homem, mulher: inteiro
-
 inicio
 	homem <- 0
 	mulher <- 0
@@ -1519,10 +1427,8 @@ Prática_01:
 
 ```pseudocode
 algoritmo "CONTAR_1_ATE_10_PARA"
-
 var
 	C: inteiro
-
 inicio
 	EscrevaL("De 1 ate 10")
 	Para C <- 1 ate 10 passo 1 faca
@@ -1540,10 +1446,8 @@ Prática_02:
 
 ```pseudocode
 algoritmo "SOMA_VALORES_PARA"
-
 var
 	N, S, C: inteiro
-
 inicio
 	S <- 0
 	Para C <- 1 ate 5 faca
@@ -1559,10 +1463,8 @@ Prática_03:
 
 ```pseudocode
 algoritmo "VALORES_PARES"
-
 var
 	n, v: inteiro
-
 inicio
 	Escreval("PROGRESSIVO")
 	Escreva("Digite um valor: ")
@@ -1583,10 +1485,8 @@ Fimalgoritmo
 
 ```pseudocode
 algoritmo "QUANTOS_ENTRE_0_E_10"
-
 var
 	s, v, C, impar: inteiro
-
 inicio
 	s <- 0
 	impar <- 0
@@ -1609,10 +1509,8 @@ Prática_04:
 
 ```pseudocode
 algoritmo "COMBINACOES"
-
 var
 	C1, C2 : inteiro
-
 inicio
 	Para C1 <- 1 ate 3 faca
 		Para C2 <- 1 ate 3 faca
@@ -1624,10 +1522,8 @@ Fimalgoritmo
 
 ```pseudocode
 algoritmo "COMBINACOES"
-
 var
 	C1, C2, V1, V2 : inteiro
-
 inicio
 	escreva("Digite o primeiro valor: ")
 	leia(V1)
@@ -1647,10 +1543,8 @@ Exercício_01:
 
 ```pseudocode
 algoritmo "SEQUENCIA_DE_FIBONACCI"
-
 var
 	X1, X2, X3, S: inteiro
-
 inicio
 	X1 <- 0
 	X2 <- 1
@@ -1669,11 +1563,9 @@ Exercício_02:
 
 ```pseudocode
 algoritmo "ANALISADOR_DE_VALORES"
-
 var
 	valor, C, soma, divi, SomaPar: inteiro
 	nulo: real
-
 inicio
 	soma <- 0
 	divi <- 0
@@ -1707,12 +1599,10 @@ Fimalgoritmo
 
 ```pseudocode
 algoritmo "DETECTOR_PESADO"
-
 var
 	I: Inteiro
 	N, Pesado: Caractere
 	P, Mai: Real
-
 Procedimento Topo()
 Inicio
 	LimpaTela
@@ -1721,7 +1611,6 @@ Inicio
 	EscrevaL(" Maior Peso ate agora: ", Mai, "kg")
 	EscrevaL("------------------------------------")
 FimProcedimento
-
 inicio
 	Topo()
 	Para I <- 1 ate 5 faca
@@ -1746,7 +1635,6 @@ Fimalgoritmo
 
 ```pseudocode
 Procedimento Soma (A, B: Inteiro)
-
 Inicio
 	EscrevaL(“Recebi o valor”, A)
 	EscrevaL(“Recebi o valor”, B)
@@ -1756,17 +1644,14 @@ FimProcedimento
 
 ```pseudocode
 algoritmo "FAZ_SOMA_PROCEDIMENTO"
-
 var
 	x, y: inteiro
-
 Procedimento Soma(a, b: Inteiro)
 inicio
 	EscrevaL("Recebi o valor ", a)
 	EscrevaL("Recebi o valor ", b)
 	EscrevaL("A soma entre os dois e ", a + b)
 FimProcedimento
-
 inicio
 	x <- 5
 	y <- 3
@@ -1776,10 +1661,8 @@ Fimalgoritmo
 
 ```pseudocode
 algoritmo "PAR_OU_IMPAR_PROCEDIMENTO"
-
 var
 	N: Inteiro
-
 Procedimento ParOuImpar(V: Inteiro)
 inicio
 	Se (V % 2 = 0) entao
@@ -1788,7 +1671,6 @@ inicio
 		Escreva("O numero ", V, " e IMPAR")
 	FimSe
 FimProcedimento
-
 inicio
 	Escreva("Digite um numero: ")
 	Leia(N)
@@ -1802,13 +1684,11 @@ Fimalgoritmo
 
 ```pseudocode
 Procedimento Soma(var A, B: Inteiro)
-
 Inicio
 	A <- A + 1
 	B <- B + 2
 	EscrevaL(“A soma vale”, A+B)
 FimProcedimento
-
 Inicio
 	X <- 4
 	Y <- 8
@@ -1819,21 +1699,16 @@ FimAlgoritmo
 
 ```pseudocode
 algoritmo "SEQUENCIA_DE_FIBONACCI_REFERENCIA"
-
 var
 	C, X1, X2, X3: inteiro
-
 procedimento ProximoFibonacci (var A, B: Inteiro)
-
-var C: Inteiro
-
-inicio
-	C <- A + B
-	Escreva (C)
-	A <- B
-	B <- C
+    var C: Inteiro
+    inicio
+        C <- A + B
+        Escreva (C)
+        A <- B
+        B <- C
 FimProcedimento
-
 inicio
 	X1 <- 0
 	Escreva(X1)
@@ -1851,15 +1726,12 @@ Fimalgoritmo
 
 ```pseudocode
 algoritmo "SOMA_FUNCAO"
-
 var
 	V1, V2, S: Inteiro
-
 Funcao soma(X, Y: Inteiro): Inteiro
 Inicio
 	Retorne X + y
 FimFuncao
-
 inicio
 	Escreva("Digite o primeiro valor: ")
 	Leia(V1)
@@ -1872,11 +1744,9 @@ fimalgoritmo
 
 ```pseudocode
 algoritmo "ParImpar_Funcao"
-
 var
 	N: Inteiro
-	R: Caractere
-	
+	R: Caractere	
 Funcao ParOuImpar(V: Inteiro): Caractere
 Inicio
 	Se (V % 2 = 0) entao
@@ -1885,7 +1755,6 @@ Inicio
 		Retorne "IMPAR"
 	FimSe
 FimFuncao
-
 inicio
 	Escreva("Digite um numero: ")
 	Leia(N)
@@ -1896,14 +1765,11 @@ Fimalgoritmo
 
 ```pseudocode
 algoritmo "FatorialFuncao"
-
 var
 	N, F: Inteiro
-
 Funcao Fatorial(V: Inteiro): Inteiro
 Var
 	C, R: Inteiro
-
 Inicio
 	R <- 1
 	Para C <- 1 ate V faca
@@ -1911,7 +1777,6 @@ Inicio
 	FimPara
 	Retorne R
 FimFuncao
-
 inicio
 	Escreva("Digite um numero: ")
 	Leia(N)
@@ -1924,10 +1789,8 @@ Fimalgoritmo
 
 ```pseudocode
 algoritmo "SEQUENCIA_DE_FIBONACCI_FUNCAO"
-
 var
 	I, T1, T2, T3: inteiro
-
 Funcao ProximoFibonacci (var N1, N2: Inteiro): Inteiro
 var
 	N3: Inteiro
@@ -1937,7 +1800,6 @@ inicio
 	N2 <- N3
 	Retorne N3
 FimFuncao
-
 inicio
 	T1 <- 0
 	Escreva(T1)
@@ -1956,7 +1818,6 @@ Fimalgoritmo
 
 ```pseudocode
 algoritmo "ANALIZADOR_DE_STRINGS"
-
 var
 	n: caractere
 	c: inteiro
