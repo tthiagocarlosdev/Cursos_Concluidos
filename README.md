@@ -7,9 +7,9 @@
 - Hardware (20 horas) - Curso de montagem e manutenção de computadores;
   - Montando meu DeskTop - [clique aqui](https://www.instagram.com/stories/highlights/17885547524152527/)
 - Algoritmo (40 horas) - Curso de algoritmos e Lógica de Programação;
-  - Atividades - [clique aqui](https://github.com/tthiagocarlosdev/TESTES/blob/main/Cursos_Concluidos/Curso_de_algoritmos_e_Logica_de_Programacao-Curso_em_Video.md)
+  - Atividades - [clique aqui](https://github.com/tthiagocarlosdev/Cursos_Concluidos/blob/main/notes/Curso_de_algoritmos_e_Logica_de_Programacao-Curso_em_Video.md)
 - Git e GitHub (20 horas) - Curso de versionamento de softwares;
-  - Atividades - [clique aqui](https://github.com/tthiagocarlosdev/TESTES/blob/main/Cursos_Concluidos/Curso_de_Git_e_GitHub-Curso_em_Video.md)
+  - Atividades - [clique aqui](https://github.com/tthiagocarlosdev/Cursos_Concluidos/blob/main/notes/Curso_de_Git_e_GitHub-Curso_em_Video.md)
 - Linux (40 horas) - Curso de sistema operacional Linux;
 - Curso HTML5 e CSS3: módulo 1 (40 horas) - Curso de linguagem de marcação de HiperTexto e estilização de componentes escritos em linguagens de marcação;
 - Javascript (40 horas) - Curso de linguagem JavaScript.
@@ -25,7 +25,7 @@
   - Trilha - O guia estelar de HTML;
   - Trilha - O guia estelar de CSS;
   - Trilha - O guia estelar de JavaScript;
-    - Atividades - [clique aqui](https://github.com/tthiagocarlosdev/TESTES/blob/main/Cursos_Concluidos/O_guia_estelar_de_JavaScript-RocketSeat.md)
+    - Atividades - [clique aqui](https://github.com/tthiagocarlosdev/Cursos_Concluidos/blob/main/notes/O_guia_estelar_de_JavaScript-RocketSeat.md)
   - Trilha - O guia estelar de Git;
   - Trilha - Guia estelar de GitHub
 
@@ -34,7 +34,7 @@
 **Cursos:** 
 
 - Curso de Git e GitHub
-  - Atividades - [clique aqui](https://github.com/tthiagocarlosdev/TESTES/blob/main/Cursos_Concluidos/Curso_de_Git_e_Github-Dev_Aprender.md)
+  - Atividades - [clique aqui](https://github.com/tthiagocarlosdev/Cursos_Concluidos/blob/main/notes/Curso_de_Git_e_Github-Dev_Aprender.md)
 - Curso JavaScript
 
 **Meu repósitório no GitHub:**

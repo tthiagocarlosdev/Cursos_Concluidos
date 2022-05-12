@@ -1,6 +1,6 @@
 # Guias estelares
 
-## O guia estelar de JavaScript
+## O guia estelar de JavaScript - RocketSeat
 
 # Introdução
 
