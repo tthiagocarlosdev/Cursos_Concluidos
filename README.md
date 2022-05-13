@@ -1,6 +1,6 @@
 # Cursos Realizados
 
-**Plataforma:** [Curso em Video](https://www.cursoemvideo.com/)
+## **Plataforma:** [Curso em Video](https://www.cursoemvideo.com/)
 
 **Cursos:** 
 
@@ -14,7 +14,7 @@
 - Curso HTML5 e CSS3: módulo 1 (40 horas) - Curso de linguagem de marcação de HiperTexto e estilização de componentes escritos em linguagens de marcação;
 - Javascript (40 horas) - Curso de linguagem JavaScript.
 
-**Plataforma:** [RocketSeat](https://www.rocketseat.com.br/)
+## **Plataforma:** [RocketSeat](https://www.rocketseat.com.br/)
 
 **Cursos:** 
 
@@ -29,27 +29,29 @@
   - Trilha - O guia estelar de Git;
   - Trilha - Guia estelar de GitHub
 
-**Plataforma:** [Dev Aprender](https://www.youtube.com/c/DevAprender)
+## **Plataforma:** [Dev Aprender](https://www.youtube.com/c/DevAprender)
 
 **Cursos:** 
 
 - Curso de Git e GitHub
   - Atividades - [clique aqui](https://github.com/tthiagocarlosdev/Cursos_Concluidos/blob/main/notes/Curso_de_Git_e_Github-Dev_Aprender.md)
 - Curso JavaScript
+  - Atividades - [clique aqui](https://github.com/tthiagocarlosdev/Cursos_Concluidos/blob/main/notes/Curso_JavaScript-Dev_Aprender.md)
 
-**Plataforma:** [Dicas para Devs](https://www.youtube.com/c/dicasparadevs)
+## **Plataforma:** [Dicas para Devs](https://www.youtube.com/c/dicasparadevs)
 
 **Cursos:** 
 
 - Formulário com HTML, CSS e JavaScript
+  - Formulário - [clique aqui](https://github.com/tthiagocarlosdev/TESTES/tree/main/formulario)
 - Curso de React
-  - Atividades  [clique aqui]()
+  - Atividades  [clique aqui](https://github.com/tthiagocarlosdev/Cursos_Concluidos/blob/main/notes/Curso_de_React_Para_Completos_Iniciantes-Dicas_para_Devs.md)
 
-**Meu repósitório no GitHub:**
+## **Meu repósitório no GitHub:**
 
 [github.com/tthiagocarlosdev](https://github.com/tthiagocarlosdev)
 
-**Intagram:**
+## **Intagram:**
 
 [www.instagram.com/tthiagocarlos.dev/](https://www.instagram.com/tthiagocarlos.dev/)
 
@@ -57,6 +59,7 @@
 
 [www.instagram.com/stories/highlights/17885547524152527/](https://www.instagram.com/stories/highlights/17885547524152527/)
 
-**YouTube:**
+## **YouTube:**
 
 [www.youtube.com/channel/UCZN-uQtc4UDQt_tLu-I7Wpw](https://www.youtube.com/channel/UCZN-uQtc4UDQt_tLu-I7Wpw)
+
