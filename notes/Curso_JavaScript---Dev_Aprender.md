@@ -289,10 +289,14 @@ console.log(outraMensagem[2])
 m
 ```
 
-- procurando algum caracter ou palavra dentro da string. PAREI
+- procurando algum caracter ou palavra dentro da string.
 
 ```javascript
 console.log(mensagem.includes('primeira'))
+```
+
+```shell
+true
 ```
 
 - procurando pelo caracter ou palavra que a string começa.
@@ -301,10 +305,18 @@ console.log(mensagem.includes('primeira'))
 console.log(mensagem.startsWith('minha'))
 ```
 
+```shell
+false
+```
+
 - procurando pelo caracter ou palavra que a string termina.
 
 ```javascript
 console.log(mensagem.endsWith('mensagem'))
+```
+
+```shell
+false
 ```
 
 - para saber qual o índice de algum caracter ou palavra dentro da string.
@@ -313,10 +325,18 @@ console.log(mensagem.endsWith('mensagem'))
 console.log(mensagem.indexOf('primeira'))
 ```
 
+```shell
+7
+```
+
 - replace para substituir um termo dentro da string.
 
 ```javascript
 console.log(mensagem.replace('minha', 'sua'))
+```
+
+```shell
+ sua primeira mensagem 
 ```
 
 - para remover os espaço excedentes no início e no final da string.
@@ -325,10 +345,18 @@ console.log(mensagem.replace('minha', 'sua'))
 console.log(mensagem.trim())
 ```
 
+```shell
+minha primeira mensagem
+```
+
 - para separar o conteúdo da string.
 
 ```javascript
 console.log(mensagem.split(' '))
+```
+
+```shell
+[ '', 'minha', 'primeira', 'mensagem', '' ]
 ```
 
 **Template literal:**
@@ -338,6 +366,14 @@ const mensagem =
 'Oi isso é a minha\n' +
 '\'primeira\' mensagem'
 console.log(mensagem)
+```
+
+```shell
+Oi isso é a minha
+'primeira' mensagem
+```
+
+```javascript
 // Object {}
 // Boolean true,false
 // string '', ""
@@ -345,6 +381,16 @@ console.log(mensagem)
 const outra = `oi isso é a minha
 'primeira' mensagem`
 console.log(outra)
+```
+
+```shell
+oi isso é a minha
+'primeira' mensagem
+```
+
+
+
+```javascript
 const nome = 'Thiago'
 const email = 
 `ola ${nome}
@@ -358,18 +404,56 @@ Bill.`
 console.log(email)
 ```
 
+```shell
+ola Thiago
+
+Obrigado por se inscrever no canal
+
+Para acompanhar os vídeos não se esqueça de ativar o sino.
+
+Obrigado,
+Bill.
+```
+
 **Date:**
 
 ```javascript
 const data1 = new Date()
 console.log(data1)
+```
+
+```shell
+2022-05-14T22:48:55.583Z
+```
+
+``` javascript
 const data2 = new Date('septembre 06 2022 07:30')
 console.log(data2)
+```
+
+```shell
+2022-09-06T10:30:00.000Z
+```
+
+```javascript
 const data3 = new Date(2022,08,27,7,30)
 console.log(data3)
+```
+
+```shell
+2022-09-27T10:30:00.000Z
+```
+
+```javascript
 console.log(data1.toDateString()) // para apresentar como string.
 console.log(data1.toTimeString()) // para apresentar o padrão.
 console.log(data1.toISOString()) // como visualiza no banco de dados.
+```
+
+```shell
+Sat May 14 2022
+19:53:52 GMT-0300 (Horário Padrão de Brasília)
+2022-05-14T22:53:52.325Z
 ```
 
 **Introdução a Arrays:**
@@ -386,18 +470,46 @@ console.log(data1.toISOString()) // como visualiza no banco de dados.
 ```javascript
 let numeros = [1, 2, 3]
 console.log(`Array Original: ${numeros}`)
-// Início
+```
+
+```shell
+Array Original: 1,2,3
+```
+
+- **Início**
+
+```javascript
 numeros.unshift(0)
 console.log(`Array add início: ${numeros}`)
-// Meio
+```
+
+```shell
+Array add início: 0,1,2,3
+```
+
+- **Meio**
+
+```javascript
 numeros.splice(1, 0, 'a') // o 1ª parâmetro é o índice onde será add o novo valor. O 2º parâmetro é o que você quer deletar e o 3º é o que será inserido.
 console.log(`Array add no meio: ${numeros}`)
-// Final
+```
+
+```shell
+Array add no meio: 0,a,1,2,3
+```
+
+- **Final**
+
+```javascript
 numeros.push(5)
 console.log(`Array add final: ${numeros}`)
 ```
 
-**Encontrando um elemento:**
+```shell
+Array add final: 0,a,1,2,3,5
+```
+
+**Encontrando um elemento:**PAREI
 
 - **Primitivos:**
 
