@@ -32,33 +32,25 @@ Recuperando o Pendrive instalável:
 2. Digite a senha de sua máquina e clique em autenticar para ele abrir o gerenciador;
 3. Ao abrir o **Gerenciador de pacotes Synaptic** clique em “**Pesquisa**” na parte superior central da tela, e na tela “**Localizar**” que abrirár, digite “**gparted**” e clique em pesquisar;
 4. Clique com o botão direito do ícone da ferramenta **gparted** e depois clique em “**marcar para instalação**” e depois na próxima tela que abrir, clique em “**marcar**”;
-5. ​	Clique no botão “**Aplicar**” no canto direito superior do programa e depois em “**Apply**”; PAREI
-6. ​	Após a instalação do **gparted**, feche o **Gerenciador de pacotes Synaptic**;
-7. ​	Após isso, pegue o pendrive que usou para instalar o linux e plug em sua máquina e depois na barra de pesquisa do linux mint, abra o **gparted**;
-8. ​	Se aparecer a mensagem: “**The driver descriptor says physical block size is 2048 bytes, but Linux says it is 512 bytes**” apenas cancele esta mensagem;
-9. ​	No canto superior direito, selecione a unidade usb que irá recuperar;
-10. ​	Clique no menu “**Dispositivo**” e depois em “**Criar tabela de partição**”;
-11. ​	Em **Criar tabela de partição** na opção “**Selecionar novo tipo de tabela de partições**” selecione a opção “**msdos**” e clique em aplicar, pode aparecer uma mensagem de “**Erro da Libparted**”, clique em ignorar;
-12. ​	Assim que o **Gparted** terminar a sua execução, tire o pendrive da máquina e recoloque;
-13. ​	No **Gparted**, vá até o menu **G****P****arted** e clique em “**Atualizar dispositivos**” e depois em no ícone “**Criar uma nova repartição**”. Abrirá uma nova janela “**Criar nova partição**” e em “**sistema de arquivos**” selecione “**fat32**” e clique em adicionar; Depois clique em “**Aplicar todas as operações**” abrirá uma nova janela pedindo confirmação, clique em “**aplicar**”. Após o processo, clique em “**fechar**” e já está pronto.
+5. Clique no botão “**Aplicar**” no canto direito superior do programa e depois em “**Apply**”; 
+6. Após a instalação do **gparted**, feche o **Gerenciador de pacotes Synaptic**;
+7. Após isso, pegue o pendrive que usou para instalar o linux e plug em sua máquina e depois na barra de pesquisa do linux mint, abra o **gparted**;
+8. Se aparecer a mensagem: “**The driver descriptor says physical block size is 2048 bytes, but Linux says it is 512 bytes**” apenas cancele esta mensagem;
+9. No canto superior direito, selecione a unidade usb que irá recuperar;
+10. Clique no menu “**Dispositivo**” e depois em “**Criar tabela de partição**”;
+11. Em **Criar tabela de partição** na opção “**Selecionar novo tipo de tabela de partições**” selecione a opção “**msdos**” e clique em aplicar, pode aparecer uma mensagem de “**Erro da Libparted**”, clique em ignorar;
+12. Assim que o **Gparted** terminar a sua execução, tire o pendrive da máquina e recoloque;
+13. No **Gparted**, vá até o menu **GParted** e clique em “**Atualizar dispositivos**” e depois no ícone “**Criar uma nova repartição**”. Abrirá uma nova janela “**Criar nova partição**” e em “**sistema de arquivos**” selecione “**fat32**” e clique em adicionar; Depois clique em “**Aplicar todas as operações**” abrirá uma nova janela pedindo confirmação, clique em “**aplicar**”. Após o processo, clique em “**fechar**” e já está pronto.
 
+## 7. Conhecendo o Ambiente do Linux Mint - Curso Linux #05
 
+Na tela de “**Bem-vindo ao Linux Mint**” desative a opção no canto inferior direito “**Exibir ao iniciar**” e feche a tela.
 
-1. ​	**Conhecendo o Ambiente do Linux Mint - Curso Linux #05**
+A interface ao **Linux Mint** é bem semelhante ao do **Windows**. O menu é organizado por categoria. Já está instalado o **LibreOffice**. O **Firefox** também já vem instalado.
 
+No canto direito inferior terá um escudo que ao colocar o cursor do mouse sobre ele irá aparecer “**Bem-vindo ao Gerenciador de Atualizações**”. Clique nele para abrir esse gerenciador. A primeira atualização irá atualizar todos os aplicativos do sistema.
 
-
-Na tela de “**Bem-vindo ao linux Mint**” desative a opção no canto inferior direito “**Exibir ao iniciar**” e feche a tela.
-
-A interface ao **Linux Mint** é bem semelhante ao do **Windows**. O menu é organizado por categoria. Já está instalado o LibreOffice. O Firefox também já vem instalado.
-
-No canto direito inferior terá um escudo que ao colocar o curso do mouse sobre ele irá aparecer “**Bem-vindo ao Gerenciador de Atualizações**”. Clique nele para abrir esse gerenciador. A primeira atualização irá atualizar todos os aplicativos do sistema.
-
-
-
-1. ​	**Instalação básica de programas no Linux - Curso Linux #06.1**
-
-
+## 8. Instalação básica de programas no Linux - Curso Linux #06.1
 
 Instalando programas: Vá até o menu Mint e digite “**gerenciador de programas**” irá abrir a “loja” de aplicativos do Linux Mint.
 
@@ -70,81 +62,130 @@ Para baixar o **Google Chrome**, vá no navegado FireFox e acesse a página do G
 
 O Firefox irá perguntar se você quer abrir  com o instalador de pacotes **Gdebian**, clique em “**OK**”. Quando abrir o instalador de pacotes, clique em “**Instalar Pacote**”. Após a instalação é só executar o programa.
 
-
-
-1. ​	**Instalação avançada de programas no Linux - Curso Linux #06.2**
-
-
+## 9. Instalação avançada de programas no Linux - Curso Linux #06.2
 
 **Instalação pelo Synaptic**:
 
 Clique no símbolo do Mint e digite **Synaptic** para abrir o “**Gerenciador de pacotes Synaptic**”. Clique no Botão “**Pesquisa**” e digite “**chromium**”, clique com o botão direito do mouse sobre o arquivo e depois clique sobre “M**arcar para instalação**” e depois em “**Marcar**”. Depois clique em “**Aplicar**”. Uma tela de resumo com o que será feito abrirá, basta clicar no botão “**Aplique**”.
 
+### Instalação pelo Terminal:
 
+Abra o terminal “**Ctrl+Alt+T**” e digite os comandos:
 
-**Instalação pelo Terminal:**
+- Para conhecer o apt:
 
-Abra o terminal “Ctrl+Alt+T” e digite os comandos:
+```shell
+apt
+```
 
-**$ apt** – Para conhecer o apt.
+- Surpresa rsrsrsrs:
 
-**$ apt moo** – Surpresa rsrsrsrs
+```shell
+apt moo
+```
 
-**$ clear** – Para limpar a tela.
+- Para limpar a tela:
 
-**$ apt install htop** – Para instalar o programa de monitoramento do sistema htop.
+```shell
+clear
+```
 
-**$ htop** – para abrir o programa htop.
+- Para instalar o programa de monitoramento do sistema htop:
 
-**$ apt install chromium** – Para instalar o Chromium.
+```shell
+apt install htop
+```
 
-**$ apt remove chromium** – Para remover o programa Chromium.
+- Para abrir o programa htop:
+
+```shell
+htop
+```
+
+- Para instalar o Chromium:
+
+```shell
+apt install chromium
+```
+
+- Para remover o programa Chromium:
+
+```shell
+apt remove chromium
+```
 
 OBS.: Ele vai sugerir para remover alguns pacotes que não serão mais necessários através do seguinte comando:
 
-**$ sudo apt autoremove “nome do pacote”**
+```shell
+sudo apt autoremove “nome do pacote”
+```
 
+### Instalação através do navegador:
 
+Abra o navegador, pesquise por “Visual Studio Code”, acesse a página do programa, acesse o link “**Downloads**” e clique na versão do seu sistema para baixar o arquivo executável. Após baixar o arquivo, execute o mesmo para a instalação, coloque a senha do seu computador e a instalação será realizada.
 
-**Instalação através do navegador:**
+### No terminal:
 
-Abra o navegador, pesquise por “Visual Studio Code”, acesse a página do programa, acesse o link “**Downloads**” e clique na versão do seu sistema para baixa o arquivo executável. Após baixar o arquivo, execute o mesmo para a instalação, coloque a senha do seu computador e a instalação será realizada.
+- Para manipular pacotes:
 
-
-
-**No terminal:**
-
-**dpkg** – para manipular pacotes
+```shell
+dpkg
+```
 
 Acesse a página onde o arquivo do pacote foi baixado/instalado e digite:
 
-**$ sudo dpkg --remove “nome do pacote”** - Para remover o pacote.
+- Para remover o pacote:
+
+```shell
+sudo dpkg --remove “nome do pacote”
+```
 
 Na mesma página para instalar digite o comando:
 
-**$ sudo dpkg --install “nome do pacote”** - Para instalar o pacote.
+- Para instalar o pacote:
 
-**$ apt search “nome do pacote”** - Para procurar por um pacote.
+```shell
+sudo dpkg --install “nome do pacote”
+```
 
-**$ sudo apt clean** – Para limpar o cache.
+- Para procurar por um pacote:
 
-**$ sudo apt autoremove** – Para apagar pacotes que não estão sendo mais usados.
+```shell
+apt search “nome do pacote”
+```
 
+- Para limpar o cache:
 
+```shell
+sudo apt clean
+```
 
-1. ​	**Terminal no Linux - Introdução - Curso Linux #07.1**
+- Para apagar pacotes que não estão sendo mais usados:
 
+```shell
+sudo apt autoremove
+```
 
+## 10. Terminal no Linux - Introdução - Curso Linux #07.1
 
-**$ bash --version** – Comando para verificar a versão do GNU bash.
+- Comando para verificar a versão do GNU bash:
 
-**$ ls** – comando para listar as pastas e arquivos do diretório em que você está.
+```shell
+bash --version
+```
+
+- Comando para listar as pastas e arquivos do diretório em que você está:
+
+```shell
+ls
+```
 
 OBS.:
 
-\1. Os comando sempre devem serem digitados em minúsculo.
+- Os comando sempre devem serem digitados em minúsculo;
+- Os parâmetros modificam a forma como os comandos irão apresentar seu resultado. Os parâmetros sempre são executados com um traço e uma letra (-l) ou dois traços e uma palavra(--long). Exemplo:
 
-\2. Os parâmetros modificam a forma como os comandos irão apresentar seu resultado. Os parâmetros sempre são executados com um traço e uma letra (-l) ou dois traços e uma palavra(--long). Exemplo:
+PAREI
 
 **$ ls -l** – Para listar o conteúdo de um diretório apresentando mais informações sobre cada arquivo e pasta que está dentro do diretório.
 
