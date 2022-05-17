@@ -509,7 +509,7 @@ console.log(`Array add final: ${numeros}`)
 Array add final: 0,a,1,2,3,5
 ```
 
-**Encontrando um elemento:**PAREI
+**Encontrando um elemento:**
 
 - **Primitivos:**
 
@@ -520,16 +520,28 @@ const numeros = [1, 2, 3, 1, 4]
 console.log(numeros.indexOf(1))
 ```
 
+```shell
+0
+```
+
 **lastIndexOf** → retorna o índice da última ocorrência daquele valor procurado dentro do array.
 
 ```javascript
 console.log(numeros.lastIndexOf(1))
 ```
 
+```shell
+3
+```
+
 **includes** → retorna true ou false se o valor procurado existir dentro do array.
 
 ```javascript
 console.log(numeros.includes(2))
+```
+
+```shell
+true
 ```
 
 - **Referência:**
@@ -545,6 +557,10 @@ const marca = marcas.find(function(marca){
 console.log(marca)
 ```
 
+```shell
+{ id: 2, nome: 'b' }
+```
+
 - **Arrow Functions:**
 
 ```javascript
@@ -556,23 +572,55 @@ const marca = marcas.find(marca => marca.nome = 'c')
 console.log(marca)
 ```
 
+```shell
+{ id: 1, nome: 'c' }
+```
+
 - **Removendo Elementos do array:**
 
 ```javascript
 const alfabeto = ['a', 'b', 'c', 'd', 'e', 'f']
 console.log(`Array Original: ${alfabeto}`)
-// Final
+```
+
+**Final**
+
+```javascript
 const ultimo = alfabeto.pop()
 console.log(`Último elemento: ${ultimo}`)
-console.log(`Após remover último elemento: ${alfabeto}`)
-// Início
+console.log(`Após remover último elemento: ${alfabeto}`)\
+```
+
+```shell
+Array Original: a,b,c,d,e,f
+Último elemento: f
+Após remover último elemento: a,b,c,d,e
+```
+
+**Início**
+
+```javascript
 const primeiro = alfabeto.shift()
 console.log(`Primeiro elemento: ${primeiro}`)
 console.log(`Após remover 1º elemento: ${alfabeto}`)
-// Meio
+```
+
+```shell
+Primeiro elemento: a
+Após remover 1º elemento: b,c,d,e
+```
+
+**Meio**
+
+```javascript
 const meio = alfabeto.splice(2,1)
 console.log(`Elemento do meio: ${meio}`)
 console.log(`Após remover elemento do meio: ${alfabeto}`)
+```
+
+```shell
+Elemento do meio: d
+Após remover elemento do meio: b,c,e
 ```
 
 - **Esvaziando um Array:**
@@ -584,6 +632,11 @@ console.log(`Array letras: ${letras}`)
 console.log(`Array outras: ${outras}`)
 ```
 
+```shell
+Array letras: a,b,c,d,e,f
+Array outras: a,b,c,d,e,f
+```
+
 **1ª solução:** não recomendada
 
 ```javascript
@@ -591,6 +644,12 @@ letras = []
 console.log('1º solução:')
 console.log(`Array letras: ${letras}`)
 console.log(`Array outras: ${outras}`)
+```
+
+```shell
+1º solução:
+Array letras: 
+Array outras: a,b,c,d,e,f
 ```
 
 **2ª solução:** melhor solução
@@ -602,6 +661,12 @@ console.log(`Array letras: ${letras}`)
 console.log(`Array outras: ${outras}`)
 ```
 
+```shell
+2º solução:
+Array letras: 
+Array outras:
+```
+
 **3ª solução:**
 
 ```javascript
@@ -609,6 +674,12 @@ letras.splice(0, letras.length)
 console.log('3º solução:')
 console.log(`Array letras: ${letras}`)
 console.log(`Array outras: ${outras}`)
+```
+
+```shell
+3º solução:
+Array letras: 
+Array outras: 
 ```
 
 **4ª solução:** requer muito do sistema em grandes bancos de dados.
@@ -622,6 +693,12 @@ console.log(`Array letras: ${letras}`)
 console.log(`Array outras: ${outras}`)
 ```
 
+```shell
+4º solução:
+Array letras: 
+Array outras: 
+```
+
 - **Combinar Arrays:**
 
 ```javascript
@@ -633,21 +710,40 @@ console.log(`2º array: ${segundo}`)
 console.log(`Arrays juntos: ${combinado}`)
 ```
 
+```shell
+1º array: a,b,c
+2º array: d,e,f
+Arrays juntos: a,b,c,d,e,f
+```
+
 - **Dividir Array:**
 
 ```javascript
-const primeiro = ['a', 'b', 'c']
-const segundo = ['d', 'e', 'f']
-const combinado = primeiro.concat(segundo)
-console.log(`1º array: ${primeiro}`)
-console.log(`2º array: ${segundo}`)
-console.log(`Arrays juntos: ${combinado}`)
 const cortado = combinado.slice(1, 3)
 console.log(`Array a partir do índice 1 até o índice 2: ${cortado}`)
+
+```
+
+```
+Array a partir do índice 1 até o índice 2: b,c
+```
+
+```javascript
 const cortado = combinado.slice(1) // inicia a partir do índice passado até o último índice
 console.log(`Array a partir do índice passado: ${cortado}`)
+```
+
+```shell
+Array a partir do índice passado: b,c,d,e,f
+```
+
+```javascript
 const cortado = combinado.slice() // copia todo o array
 console.log(cortado)
+```
+
+```shell
+ [ 'a', 'b', 'c', 'd', 'e', 'f' ]
 ```
 
 - **Operador Spread**
@@ -663,6 +759,14 @@ console.log(`Segundo: ${segundo}`)
 console.log(`Combinado: ${combinado}`)
 console.log(`Combinado 2: ${combinado2}`)
 console.log(`Clonado: ${clonado}`)
+```
+
+```shell
+Primeiro: a,b,c
+Segundo: d,e,f
+Combinado: a,b,c,d,e,f
+Combinado 2: a,b,c,1,d,e,f,%
+Clonado: a,b,c,d,e,f
 ```
 
 - **forEach**
