@@ -185,17 +185,17 @@ OBS.:
 - Os comando sempre devem serem digitados em minúsculo;
 - Os parâmetros modificam a forma como os comandos irão apresentar seu resultado. Os parâmetros sempre são executados com um traço e uma letra (-l) ou dois traços e uma palavra(--long). Exemplo:
 
-PAREI
+- Para listar o conteúdo de um diretório apresentando mais informações sobre cada arquivo e pasta que está dentro do diretório:
 
-**$ ls -l** – Para listar o conteúdo de um diretório apresentando mais informações sobre cada arquivo e pasta que está dentro do diretório.
-
-
+```shell
+ls -l
+```
 
 Resultado:
 
+```shell
 drwxr-xr-x  2 thiagocarlos thiagocarlos 4096 Jan 31 15:08 Desktop
-
-
+```
 
 **drwxr** – tipo de arquivo.
 
@@ -213,27 +213,45 @@ drwxr-xr-x  2 thiagocarlos thiagocarlos 4096 Jan 31 15:08 Desktop
 
 **Desktop** – nome do diretório.
 
+- Acessa o diretório:
 
+```shell
+cd + “nome do diretório”
+```
 
-**$ cd + “nome do diretório”** - Acessa o diretório.Ex.:
+Acessa o diretório Downloads:
 
-**$ cd Downloads/** – acessa o diretório Downloads.
+```shell
+cd Downloads/
+```
 
+- Para listar o conteúdo de um diretório apresentando mais informações em MEGA, GIGA sobre cada arquivo e pasta que está dentro do diretório:
 
+```shell
+ls -l -h
+```
 
-**$ ls -l -****h** – Para listar o conteúdo de um diretório apresentando mais informações em MEGA, GIGA sobre cada arquivo e pasta que está dentro do diretório.
+- Vai para o diretório do usuário do computador:
 
+```shell
+cd ~
+```
 
+- Mostra todos os arquivos do diretório, inclusive os ocultos:
 
-**$ cd ~** - vai para o diretório do usuário do computador.
+```shell
+ls -a
+```
 
+- Mostra todos os arquivos do diretório, inclusive os ocultos:
 
-
-**$ ls -a** – mostra todos os arquivos do diretório, inclusive os ocultos.
-
-**$ ls --all** – mostra todos os arquivos do diretório, inclusive os ocultos.
+```shell
+ls --all
+```
 
 **OBS.:** No Linux todo arquivo que o nome começa com ponto fica oculto.
+
+PAREI
 
 **$ ls -la** – Para listar o conteúdo de um diretório, inclusive os arquivos e pastas ocultos, apresentando mais informações sobre cada arquivo e pasta que está dentro do diretório.
 
