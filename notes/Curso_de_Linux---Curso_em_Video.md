@@ -387,55 +387,107 @@ history
 
 **OBS.:** A diferença entre um e outro é que no primeiro comando usamos a contra barra para que o terminal entenda que estamos criando um diretório “Módulo 1”, caso contrário ele iria criar o diretório “Módulo” e o diretório “1”. No segundo comando retiramos a contra barra, mas colocamos a sequencia de diretórios que iremos criar entre aspas, e assim também será entendido que iremos criar o diretório “Módulo 2” no final.
 
-PAREI
+- Para listar todos os diretórios dentro do diretório o qual foi executado o comando e também listar todos os arquivos dentro de cada diretório:
 
-**$ ls -R** – para listar todos os diretórios dentro do diretório o qual foi executado o comando e também listar todos os arquivos dentro de cada diretório.
+```shell
+ls -R
+```
 
 Posso também encadear os parâmetros. Ex.:
 
-**$ ls -R -l -a** – Para listar todos os diretórios e arquivos, inclusive os ocultos.
+- Para listar todos os diretórios e arquivos, inclusive os ocultos:
 
-**$ ls -Rla** – também realiza a mesma função do anterior.
+```shell
+ls -R -l -a
+```
 
+- Também realiza a mesma função do anterior:
 
+```shell
+ls -Rla
+```
 
-**$ touch Cursos/Hardware/Módulo\ 1/exercício.txt** – Este comando irá criar um arquivo chamado “exercício.txt” dentro do diretório “Módulo 1” sem precisar navegar até acessar o diretório “Módulo 1”.
+- Este comando irá criar um arquivo chamado “exercício.txt” dentro do diretório “Módulo 1” sem precisar navegar até acessar o diretório “Módulo 1”:
 
-**$ cat + nome do arquivo** – mostra o conteúdo do arquivo na tela do terminal. Ex.:
+```shell
+touch Cursos/Hardware/Módulo\ 1/exercício.txt
+```
 
-**$ cat exercício.txt –** mostra o conteúdo do arquivo “exercício.txt” na tela do terminal.
+- Para mostrar o conteúdo do arquivo na tela do terminal:
 
+```shell
+cat + nome do arquivo
+```
 
+- Mostra o conteúdo do arquivo “exercício.txt” na tela do terminal:
 
-**$ mrdir + nome do diretório** – para apagar o diretório. Ex.:
+```shell
+cat exercício.txt
+```
 
-**$ mrdir Linux/** – vai apagar o diretório “Linux/”.
+- Para apagar o diretório:
 
-OBS.: Se dentro do diretório conter arquivos que tenham conteúdo, este comando não será executado. Para isto, será preciso executar comando “rm” para apagar o arquivo e depois utilizar o “rmdir” para apagar o diretório.
+```shell
+mrdir + nome do diretório
+```
 
-**$ rm + nome do diretório + nome do arquivo** – Apaga o arquivo dentro do diretório. Ex.:
+- Vai apagar o diretório “Linux/”:
 
-**$ rm Linux/oi.txt** – apaga o arquivo “oi.txt” dentro do diretório “Linux”.
+```shell
+rmdir Linux/
+```
 
+**OBS**.: Se dentro do diretório conter arquivos que tenham conteúdo, este comando não será executado. Para isto, será preciso executar comando “rm” para apagar o arquivo e depois utilizar o “rmdir” para apagar o diretório.
 
+- Apaga o arquivo dentro do diretório:
 
-**$ rm -rf + nome do diretório** – irá apagar todos os diretórios e arquivos que estão dentro do diretório o qual foi colocado no comando. **MUITO CUIDADO**, este comando deleta todos os diretórios e arquivos **DEFINITIVAMENTE**. Ex.:
+```shell
+rm + nome do diretório + nome do arquivo
+```
 
-**$ rm -rf Linux/** – apaga o diretório “Linux” e todo o seu conteúdo, sejam outros diretórios ou arquivos que tenham conteúdo.
+- Apaga o arquivo “oi.txt” dentro do diretório “Linux”:
 
+```shell
+rm Linux/oi.txt
+```
 
+- Para apagar todos os diretórios e arquivos que estão dentro do diretório o qual foi colocado no comando. **MUITO CUIDADO**, este comando deleta todos os diretórios e arquivos **DEFINITIVAMENTE**:
 
-**$ rm -i + nome do diretório** – irá apagar o diretório e seus arquivos mas irá perguntar em cada arquivo e diretório se você tem certeza de que quer apagar.
+```shell
+rm -rf + nome do diretório
+```
 
-**$ rm -I + nome do diretório** – caso tenha ate três arquivos, ele apagar tudo automaticamente, caso tenha mais de três arquivos, ele irá perguntar se você tem certeza de que quer apagar tudo, caso confirmando, ele apaga.
+- Apaga o diretório “Linux” e todo o seu conteúdo, sejam outros diretórios ou arquivos que tenham conteúdo:
 
-**$ alias** – com este comando, enquanto o terminal estiver aberto, você poderá criar um padrão para comandos. Ex.:
+```shell
+rm -rf Linux/
+```
 
-**$ alias rm=”rm -I”** – toda vez que chamar o comando “**rm**”, ele será executado com o parâmetro “**-I**”. Se executar apenas o comando “alias”, ele mostrará quais os comandos que estão com parâmetros predefinidos.
+- Irá apagar o diretório e seus arquivos, mas irá perguntar em cada arquivo e diretório se você tem certeza de que quer apagar:
 
+```shell
+rm -i + nome do diretório
+```
 
+- Caso tenha até três arquivos, ele apaga tudo automaticamente, caso tenha mais de três arquivos, ele irá perguntar se você tem certeza de que quer apagar tudo, caso confirmando, ele apaga:
 
-1. ​	**Terminal Linux - Referência Global - Curso Linux #08**
+```shell
+rm -I + nome do diretório
+```
+
+- Com este comando, enquanto o terminal estiver aberto, você poderá criar um padrão para comandos:
+
+```shell
+alias
+```
+
+- Toda vez que chamar o comando “**rm**”, ele será executado com o parâmetro “**-i**”. Se executar apenas o comando “alias”, ele mostrará quais os comandos que estão com parâmetros predefinidos:
+
+```shell
+alias rm="rm -i"
+```
+
+## 11. Terminal Linux - Referência Global - Curso Linux #08
 
 **Referência Global \*, ?, [], {}**
 
@@ -525,4 +577,4 @@ O comando “**mv**” também pode ser usado para renomear um diretório/arquiv
 
 **$ mv + nome do diretório/arquivo + novo nome do arquivo/diretório**. Ex.:
 
-**$ mv temporario/ Temp** – para renomear o diretório temporario para Temp.PAREI
+**$ mv temporario/ Temp** – para renomear o diretório temporario para Temp.
