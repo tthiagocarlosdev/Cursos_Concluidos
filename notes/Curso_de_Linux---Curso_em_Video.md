@@ -251,73 +251,143 @@ ls --all
 
 **OBS.:** No Linux todo arquivo que o nome começa com ponto fica oculto.
 
-PAREI
+- Para listar o conteúdo de um diretório, inclusive os arquivos e pastas ocultos, apresentando mais informações sobre cada arquivo e pasta que está dentro do diretório:
 
-**$ ls -la** – Para listar o conteúdo de um diretório, inclusive os arquivos e pastas ocultos, apresentando mais informações sobre cada arquivo e pasta que está dentro do diretório.
+```shell
+ls -la
+```
 
-**$ ls -lah** – Para listar o conteúdo de um diretório, inclusive os arquivos e pastas ocultos,  apresentando mais informações em MEGA, GIGA sobre cada arquivo e pasta que está dentro do diretório.
+- Para listar o conteúdo de um diretório, inclusive os arquivos e pastas ocultos,  apresentando mais informações em MEGA, GIGA sobre cada arquivo e pasta que está dentro do diretório:
 
+```shell
+ls -lah
+```
 
+- Volta para o diretório anterior:
 
-**$ cd ..** – volta para o diretório anterior.
+```shell
+cd ..
+```
 
-**$ cd /** – volta para o diretório raiz do sistema.
+- Volta para o diretório raiz do sistema:
 
-
+```shell
+cd /
+```
 
 No diretório raiz são apresentadas todas as pastas do sistema, inclusive a pasta “bin” que contém todos os comandos que são executados no programa.
 
+- Lista todos o conteúdo da pasta bin sem acessar a pasta:
 
+```shell
+ls/bin
+```
 
-**$ ls/bin** – lista todos o conteúdo da pasta bin sem acessar a pasta.
+- Apresenta informações sobre o processador de forma detalhada:
 
+```shell
+cat /proc/cpuinfo
+```
 
+- Apresentar informações sobre o processador de forma mais resumida:
 
-**$ cat /****proc/cpuinfo** – apresenta informações sobre o processador de forma detalhada.
+```shell
+lscpu
+```
 
-**$ lscpu** – apresentar informações sobre o processador de forma mais resumida.
+- Mostra o caminho onde está acessando no momento, o caminho absoluto:
 
+```shell
+pwd
+```
 
+- Cria uma pasta/diretório:
 
-**$ pwd** – mostra o caminho onde está acessando no momento, o caminho absoluto.
+```shell
+mkdir + “nome do diretório”
+```
 
+- Cria uma pasta com o nome Linux:
 
+```shell
+mkdir Linux
+```
 
-**$ mkdir + “nome do diretório”** – cria uma pasta/diretório. Ex.:
+- Para criar um arquivo:
 
-**$ mkdir Linux** – cria uma pasta com o nome Linux.
+```shell
+touch + “nome do arquivo.extensão”
+```
 
+- Cria um arquivo com o nome oi de extensão de texto:
 
+```shell
+touch oi.txt
+```
 
-**$ touch + “nome do arquivo.extensão”** – para criar um arquivo. Ex.:
+- Abrir o arquivo de texto por um editor no terminal:
 
-**$ touch oi.txt** – cria um arquivo com o nome oi de extensão de texto.
+```shell
+nano + “nome do arquivo.extensão”
+```
 
+- Abre o arquivo oi.txt no nano:
 
+ ```shell
+ nano oi.txt
+ ```
 
-**$ nano + “nome do arquivo.extensão”** - abrir o arquivo de texto por um editor no terminal. Ex.:
+## 11. Terminal no Linux - Manipulando diretórios - Curso Linux #07.2
 
-**$ nano oi.txt** – abre o arquivo oi.txt no nano.
+- Para abrir o manual do comando ls:
 
+```shell
+ls --help
+```
 
+- Para abrir o manual mais completo do comando ls:
 
-1. ​	**Terminal no Linux - Manipulando diretórios - Curso Linux #07.2**
+```shell
+man ls
+```
 
-**$ ls--help** – para abrir o manual do comando ls.
+- Mostra todo histórico de comando já digitados:
 
-**$ man ls** – para abrir o manual mais completo do comando ls.
+```shell
+history
+```
 
-**$ history** – mostra todo histórico de comando já digitados.
+- Para executar algum comando da lista:
 
-**$ ! + número da lista** – Para executar algum comando da lista. Ex.:
+```shell
+! + número da lista
+```
 
-**$ !1068** – vai executar o comando history de acordo com a lista.
+- Vai executar o comando history de acordo com a lista:
 
-**$ mkdir -p Cursos/Hardware/Módulo\ 1/** – Comando para criar o diretório “Cursos”, dentro deste o diretório “Hardware” e dentro deste o diretório “Módulo 1”. Criação de diretório dentro de diretório. Também podemos usar o seguinte comando:
+```shell
+!1068
+```
 
-**$ mkdir -p** “**Cursos/Hardware/Módulo 2/”** - Para criar a mesma sequencia de diretórios.
+- Para criar diretório dentro de diretório:
+
+  - Comando para criar o diretório “Cursos”, dentro deste o diretório “Hardware” e dentro deste o diretório “Módulo 1”:
+
+  ```shell
+  mkdir -p Cursos/Hardware/Módulo\ 1/
+  ```
+
+  
+
+  - Também podemos usar o seguinte comando para criar a mesma sequencia de diretórios:
+
+  ```shell
+  mkdir -p “Cursos/Hardware/Módulo 2/”
+  ```
 
 **OBS.:** A diferença entre um e outro é que no primeiro comando usamos a contra barra para que o terminal entenda que estamos criando um diretório “Módulo 1”, caso contrário ele iria criar o diretório “Módulo” e o diretório “1”. No segundo comando retiramos a contra barra, mas colocamos a sequencia de diretórios que iremos criar entre aspas, e assim também será entendido que iremos criar o diretório “Módulo 2” no final.
+
+PAREI
 
 **$ ls -R** – para listar todos os diretórios dentro do diretório o qual foi executado o comando e também listar todos os arquivos dentro de cada diretório.
 
@@ -455,4 +525,4 @@ O comando “**mv**” também pode ser usado para renomear um diretório/arquiv
 
 **$ mv + nome do diretório/arquivo + novo nome do arquivo/diretório**. Ex.:
 
-**$ mv temporario/ Temp** – para renomear o diretório temporario para Temp.
+**$ mv temporario/ Temp** – para renomear o diretório temporario para Temp.PAREI
