@@ -489,53 +489,107 @@ alias rm="rm -i"
 
 ## 11. Terminal Linux - Referência Global - Curso Linux #08
 
-**Referência Global \*, ?, [], {}**
+**Referência Global**: ` *, ?, [], {}`
 
 ***** é usado para referenciar todos os arquivos que estão no diretório e acrescentando um parâmetro a frente, realizará uma filtragem. Ex.:
 
-**$ ls /****etc/\*.conf** – listará todos os arquivos que sejam de extensão “**.conf**” no diretório “**etc**”.
+- Para listar todos os arquivos que sejam de extensão “**.conf**” no diretório “**etc**”:
 
-**$ ls /etc/\*x\*** – para listar todos os documentos que tenham a letra “x” em alguma parte do seu nome.
+```shell
+ls /etc/*.conf
+```
 
-**$ ls /etc/****f******* – para listar todos os arquivos que iniciam com a letra “**f**”.
+- Para listar todos os documentos que tenham a letra “x” em alguma parte do seu nome:
 
-**$ ls /etc/?as\*** – para listar todos os arquivos que comecem com qualquer letra “**?**”, mas a segunda e terceira letra terá que ser “as” e da quarta em diante, qualquer letra.
+```shell
+ls /etc/*x*
+```
 
-**$ ls /etc/???a\*** – para listar todos os arquivos que tenha como quarta letra, a letra “**a**”.
+- Para listar todos os arquivos que iniciam com a letra “**f**”:
 
+```shell
+ls /etc/f*
+```
 
+- Para listar todos os arquivos que comecem com qualquer letra “**?**”, mas a segunda e terceira letra terá que ser “as” e da quarta em diante, qualquer letra:
 
-**$ ls /etc/****f[a-i]\*** – para listar arquivos em que a primeira letra é  “**f**”, a segunda letra pode ser “**a**, **b**, **c**, **d**, **e**, **f**, **g**, **h**, **i**” e da terceira letra em diante, pode ser qualquer letra.
+```shell
+ls /etc/?as*
+```
 
-**$ ls /etc/****p[a-c,e]\*** – para listar arquivos em que a primeira letra será “**p**” a segunda pode ser de “**a**” até “**c**” e “**e**” e da terceira em diante qualquer letra.
+- Para listar todos os arquivos que tenha como quarta letra, a letra “**a**”:
 
-**$ ls /etc/****p[a-c]\*** – para listar arquivos em que a primeira letra é “**p**”, a segunda será ou “**a**”, ou “**c**” e da terceira em diante qualquer letra.
+```shell
+ls /etc/???a*
+```
 
-**$ ls /etc/\*[a-r]\*** – para listar arquivos em que tenham como primeira letra, qualquer letra entre o intervalo de “**a**” até “**r**”.
+- Para listar arquivos em que a primeira letra é  “**f**”, a segunda letra pode ser “**a**, **b**, **c**, **d**, **e**, **f**, **g**, **h**, **i**” e da terceira letra em diante, pode ser qualquer letra:
 
-**$ ls /etc/?****[a,e,i,o,u]******* – para listar arquivos em que a primeira letra será qualquer letra e segunda letra será vogal.
+```shell
+ls /etc/f[a-i]*
+```
 
-**$ ls /etc/?[a,e,i,o,u]???** – primeira letra será qualquer letra, a segunda será vogal e da terceira até a quinta será qualquer caractere. Detalhe que o nome do arquivo só terá cinco caracteres.
+- Para listar arquivos em que a primeira letra será “**p**” a segunda pode ser de “**a**” até “**c**” e “**e**” e da terceira em diante qualquer letra:
 
+```shell
+ls /etc/p[a-c,e]\*
+```
 
+- Para listar arquivos em que a primeira letra é “**p**”, a segunda será ou “**a**”, ou “**c**” e da terceira em diante qualquer letra:
+
+```shell
+ls /etc/p[a-c]\*
+```
+
+- Para listar arquivos em que tenham como primeira letra, qualquer letra entre o intervalo de “**a**” até “**r**”:
+
+```shell
+ls /etc/*[a-r]*
+```
+
+- Para listar arquivos em que a primeira letra será qualquer letra e segunda letra será vogal:
+
+```sh
+ls /etc/?[a,e,i,o,u]*
+```
+
+- Primeira letra será qualquer letra, a segunda será vogal e da terceira até a quinta será qualquer caractere. Detalhe que o nome do arquivo só terá cinco caracteres:
+
+```shell
+ls /etc/?[a,e,i,o,u]???
+```
 
 A referência global pode ser usada para manipular arquivos e diretórios em geral.
 
 Chaves são usadas para fazer referência a padrões de strings e caracteres.
 
+- O primeiro caractere será qualquer letra e o segundo e terceiro será “**am**” ou “**ul**”:
 
+```shell
+ls /etc/?{am,ul}*
+```
 
-**$ ls /etc/?{am,ul}\*** – o primeiro caractere será qualquer letra e o segundo e terceiro será “**am**” ou “**ul**”
+- Arquivos que terminam com “**tab**” ou “**swd**”:
 
-**$ ls /etc/\*{tab,swd}** – arquivos que terminam com “**tab**” ou “**swd**”.
+```shell
+ls /etc/*{tab,swd}
+```
 
-**$ ls /etc/\*{tab,swd}\*** – arquivos que contenham “**tab**” ou “**swd**” em qualquer lugar do arquivo.
+- Arquivos que contenham “**tab**” ou “**swd**” em qualquer lugar do arquivo:
 
-**$ ls /etc/\*.{conf,db}** – arquivos que sejam de extensão “**.conf**” ou “**.db**”.
+```shell
+ls /etc/*{tab,swd}*
+```
 
-1. ​	**Manipulação de Arquivos com Linux - Curso Linux #09**
+- Arquivos que sejam de extensão “**.conf**” ou “**.db**”:
 
+```shell
+ls /etc/*.{conf,db}
+```
 
+## 13. Manipulação de Arquivos com Linux - Curso Linux #09
+
+PAREI
 
 **$ cat + “nome do arquivo”** – para visualizar o conteúdo do arquivo na tela.
 
