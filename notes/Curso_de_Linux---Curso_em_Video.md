@@ -1,4 +1,4 @@
-# Curso de Linux - Curso em vídeo - 3143
+# Curso de Linux - Curso em vídeo
 
 [Link do curso](https://www.youtube.com/watch?v=6nN2EglOqCM&list=PLHz_AreHm4dlIXleu20uwPWFOSswqLYbV)
 
@@ -589,46 +589,87 @@ ls /etc/*.{conf,db}
 
 ## 13. Manipulação de Arquivos com Linux - Curso Linux #09
 
-PAREI
+- Para visualizar o conteúdo do arquivo na tela:
 
-**$ cat + “nome do arquivo”** – para visualizar o conteúdo do arquivo na tela.
+```shell
+cat + “nome do arquivo”
+```
 
-**$ less + “nome do arquivo”** – para visualizar o arquivo de forma paginada.
+- Para visualizar o arquivo de forma paginada:
 
-**$ man + “nome do parâmetro ou comando”** – do parâmetro ou comando. O “**man**” utiliza do “**less**” para mostrar os manuais.
+```shell
+less + “nome do arquivo”
+```
 
-**$ t****ac** **+ “nome do arquivo”** – imprime o arquivo de trás para a frente.
+- Do parâmetro ou comando. O “**man**” utiliza do “**less**” para mostrar os manuais:
 
+```shell
+man + “nome do parâmetro ou comando”
+```
 
+- Imprime o arquivo de trás para a frente:
 
-**$ cp + nome do arquivo/diretório + nome do diretório** – para copiar o arquivo/diretório para o diretório informado. Ex.:
+```shell
+tac + “nome do arquivo”
+```
 
-**$ cp aulalinux.txt Faculdade/** – para copiar o arquivo “**aulalinux.txt**” para o diretório “**Faculdade**”.
+- Para copiar o arquivo/diretório para o diretório informado:
 
+```shell
+cp + nome do arquivo/diretório + nome do diretório
+```
 
+- Para copiar o arquivo “**aulalinux.txt**” para o diretório “**Faculdade**”:
 
-**$ rm + nome do arquivo** – para remover o arquivo. Ex.:
+```shell
+cp aulalinux.txt Faculdade/
+```
 
-**$ rm aulalinux.txt** – para remover o arquivo “**aulalinux.txt**”
+- Para remover o arquivo:
 
+```shell
+rm + nome do arquivo
+```
 
+- Para remover o arquivo “**aulalinux.txt**”:
 
-**$ mkdir PHP Linux Redes** – para criar três diretórios. Um “**PHP**”, um “**Linux**” e outro “**Redes**”.
+```shell
+rm aulalinux.txt
+```
 
+- Para criar três diretórios. Um “**PHP**”, um “**Linux**” e outro “**Redes**”:
 
+```shell
+mkdir PHP Linux Redes
+```
 
-**$ mv + nome do arquivo/diretório + diretório de destino** – para remover um arquivo/diretório para o diretório de destino.
+- Para remover um arquivo/diretório para o diretório de destino:
 
-**$ mv aulalinux.txt linux/** – para mover o arquivo “**aulalinux.txt**” para o diretório “**Linux**”.
+```shell
+mv + nome do arquivo/diretório + diretório de destino
+```
 
+- Para mover o arquivo “**aulalinux.txt**” para o diretório “**Linux**”:
 
+```shell
+mv aulalinux.txt linux/
+```
 
-**$ cp /****etc/\*.conf temporário/** – para copiar os que terminam com “**.conf**” do diretório “**etc**” par a o diretório “temporário”.
+- Para copiar os que terminam com “**.conf**” do diretório “**etc**” par a o diretório “temporário”:
 
+```shell
+cp /etc/*.conf temporário/
+```
 
+- O comando “**mv**” também pode ser usado para renomear um diretório/arquivo. Basta usar o seguinte comando:
 
-O comando “**mv**” também pode ser usado para renomear um diretório/arquivo. Basta usar o seguinte comando:
+```shell
+mv + nome do diretório/arquivo + novo nome do arquivo/diretório
+```
 
-**$ mv + nome do diretório/arquivo + novo nome do arquivo/diretório**. Ex.:
+- Para renomear o diretório temporario para Temp:
 
-**$ mv temporario/ Temp** – para renomear o diretório temporario para Temp.
+```shell
+mv temporario/ Temp
+```
+

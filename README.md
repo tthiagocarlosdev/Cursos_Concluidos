@@ -14,6 +14,7 @@
   - Atividades - [clique aqui](https://github.com/tthiagocarlosdev/Cursos_Concluidos/blob/main/notes/Curso_de_Linux---Curso_em_Video.md)
 - Curso HTML5 e CSS3: módulo 1 (40 horas) - Curso de linguagem de marcação de HiperTexto e estilização de componentes escritos em linguagens de marcação;
 - Javascript (40 horas) - Curso de linguagem JavaScript.
+  - Atividades - [clique aqui](https://github.com/tthiagocarlosdev/Cursos_Concluidos/blob/main/notes/Curso_de_JavaScript---Curso_em_Video.md)
 
 ## **Plataforma:** [RocketSeat](https://www.rocketseat.com.br/)
 
