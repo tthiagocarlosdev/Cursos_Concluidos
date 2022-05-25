@@ -6,42 +6,39 @@ Professor: Gustavo Guanabara
 
 ## Aula 04 – Criando o seu primeiro script
 
+- **window.alert** – Para exibir uma janela com uma mensagem:
 
-
-**window.alert** – para exibir uma janela com uma mensagem.
-
+```javascript
 window.alert('Minha primeira mensagem')
+```
 
+- **window.confirm** – Para exibir uma janela com uma pergunta:
 
-
-**window.confirm** – para exibir uma janela com uma pergunta.
-
+```javascript
 window.confirm('Está gostando de JS?')
+```
 
+- **window.prompt** – Para exibir uma janela para o usuário preencher com texto:
 
-
-**window.prompt** – para exibir uma janela para o usuário preencher com texto.
-
+```javascript
 window.prompt('Qual é seu nome?')
+```
 
+## Aula 05 – Variáveis e Tipos Primitivos
 
-
-- ​	**Aula 05 – Variáveis e Tipos Primitivos**
-
-**Comentários no JavaScript:**
+- **Comentários no JavaScript:**
 
 Os comentários são utilizados para ajudar a entender o código em consultas porteriores.
 
+- **//** - Para única linha:
 
-
-**//** - para única linha.
-
+```javascript
 // única linha
+```
 
+- **/\* \*/** - Para mais de uma linha de código:
 
-
-**/\* \*/** - para mais de uma linha de código.
-
+```javascript
 /*
 
 comentário em
@@ -51,26 +48,21 @@ mais de
 uma linha
 
 */
+```
 
+- **Variáveis:**
 
-
-**Variáveis:**
-
-Variáveis servem para guardar dados. Podem ser do **tipo inteiro** (5, 18, -12); **tipo real/float** (0.5, -15.9, 3.14, 8.0); OBS.: No JavaScript os tipos inteiro e real são considerados apenas um tipo, o **number;** Podem ser do tipo **string**, que são cadeias de caracteres (“Google”, ‘JavaScript’, `Maria`, “12345”); e por fim podem ser do tipo **Boolean** (true, false).
+Variáveis servem para guardar dados. Podem ser do **tipo inteiro** (5, 18, -12); **tipo real/float** (0.5, -15.9, 3.14, 8.0); OBS.: No JavaScript os tipos inteiro e real são considerados apenas um tipo, o **number;** Podem ser do tipo **string**, que são cadeias de caracteres (“Google”, ‘JavaScript’, 'Maria', “12345”); e por fim podem ser do tipo **Boolean** (true, false).
 
 Outros tipos:
 
 O **Number** também apresenta os tipos **Infinity** e **NaN**. Temos também os tipos **null**, **undefined**, **object**, **array**, **function**.
 
-**$ typeof** – para identificar de qual tipo é a sua variável.
-
-
+- **$ typeof** – Para identificar de qual tipo é a sua variável.
 
 No JavaScript moderno, além de utilizar a palavra **var**, também podemos usar a palavra **let**. O símbolo **=** é denominado “**recebe**”. Por exemplo.:
 
 **var s1 = carro** – significa que a variável s1 está **recebendo** o valor carro.
-
-
 
 Para declarar **strings** podemos fazer das seguintes maneiras:
 
@@ -78,166 +70,135 @@ var s1 = **“**JavaScript**” - entre aspas duplas.**
 
 var s2 = **‘**Curso em Vídeo**’ - entre aspas simples.**
 
-var s3 = **`**Guanabara**` - entre** **crase****s****.**
+var s3 = \`Guanabara` - **entre crases.**
 
+- **Identificador** – nome de cada variável.
 
+- **Regras para nomear identificadores:**
+  - Podem começar com **letra**, **$** ou **_**
+  - Não podem começar com números
+  - É possível usar letras ou números
+  - É possível usar acentos e símbolos
+  - Não podem conter espaços
+  - Não podem ser palavras reservadas
 
-**Identificador** – nome de cada variável.
+- **Dicas importantes:**
+  - Maiúsculas e minúsculas fazem a diferença (case sensitive);
+  - Tente escolher nomes coerentes para as variáveis;
+  - Evite se tornar um programador alfabeto ou um programador contador;
 
-**Regras para nomear identificadores:**
+## Aula 06 – Tratamentos de dados
 
-- ​	Podem começar com **letra**, **$** ou **_**
-- ​	Não podem começar com números
-- ​	É possível usar letras ou números
-- ​	É possível usar acentos e símbolos
-- ​	Não podem conter espaços
-- ​	Não podem ser palavras reservadas
+- **Data Types:**
+  - number
+  - string
 
-**Dicas importantes:**
-
-- ​	Maiúsculas e minúsculas fazem a diferença (case sensitive);
-- ​	Tente escolher nomes coerentes para as variáveis;
-- ​	Evite se tornar um programador alfabeto ou um programador contador;
-
-
-
-- ​	**Aula 06 –** **Tratamentos de dados**
-
-**Data Types:**
-
-\- number
-
-\- string
-
-
-
-o símbolo de **+** é utilizado tanto para somar em operações como para **concatenar** diferentes tipos de variáveis.
-
-
+O símbolo de **+** é utilizado tanto para somar em operações como para **concatenar** diferentes tipos de variáveis.
 
 **window.prompt** retorna uma **string**.
 
+- **Convertendo tipos de dados:**
+  - **String → Número:**
 
+    - **Number.parseInt(n)** – Converte para número inteiro;
+    - **Number.parseFloat(n)** – Converte para número real/float.
 
-**Convertendo tipos de dados:**
-
-- ​	**String → Número:**
-
-
-
-**Number.parseInt(n)** – converte para número inteiro;
-
-**Number.parseFloat(n)** – converte para número real/float.
-
-
-
+```javascript
 var numero1 = Number.parseInt(window.prompt("Digite um número: "))
-
 var numero2 = Number.parseInt(window.prompt("Digite outro número: "))
+```
 
+Esse dois comandos são usados para forçar a converção para **Inteiro** ou **Float**. Mas usando apenas **Number.** A variável será convertida para algum tipo de número e o próprio **JS** vai determinar se será **Inteiro** ou **Float**.
 
-
-Esse dois comandos são usados para forçar a converção para **Inteiro** ou **Float**. Mas usando apenas **Number.** a variável será convertida para algum tipo de número e o próprio **JS** vai determinar se será **Inteiro** ou **Float**.
-
-
-
+```javascript
 var numero1 = Number(window.prompt("Digite um número: "))
-
 var numero2 = Number(window.prompt("Digite outro número: "))
+```
 
+- **Número → String:**
+  - **String(n)** - Para converter para string.
+  - **n.toString()** - Para converter para string.
 
-
-- ​	**Número → String:**
-
-**String(n)** - para converter para string.
-
-**n.toString()** - para converter para string.
-
-
-
+```javascript
 window.alert("A soma entre os valores é igual a "+String(soma)) // Concatenação
+```
 
+- **Formatando Strings:**
 
-
-**Formatando Strings:**
-
+```javascript
 var s = ‘JavaScript’
+‘Eu estou aprendendo s’ // não faz interpolação
+‘Eu estou aprendendo ’ + s // usa concatenação
+`Eu estou aprendendo ${s}` // usa template string
+```
 
-‘Eu estou aprendendo s’ // não faz **interpolação**
-
-‘Eu estou aprendendo ’ + s // usa **concatenação**
-
-‘Eu estou aprendendo **${s}**’ // usa **template string**
-
-
-
+```javascript
 window.alert(`A soma entre ${numero1} e ${numero2} é igual a ${soma}`)
+```
 
+- **s.length** // informa quantos caracteres a string tem:
 
-
-**s.length** // informa quantos caracteres a string tem.
-
-
-
+```javascript
 document.write(`Olá <strong>${nome}</strong>. Seu nome tem ${nome.length} letras.<br/>`)
+```
 
+- **s.toUpperCase( )** // tudo para ‘MAIÚSCULAS’:
 
-
-**s.toUpper****C****ase()** // tudo para ‘MAIÚSCULAS’
-
-
-
+```javascript
 document.write(`Seu nome em maiúsculo: ${nome.toUpperCase()}<br/>`)
+```
 
+- **s.LowerCase( )** // tudo para ‘minúsculas’:
 
-
-**s.LowerCase()** // tudo para ‘minúsculas’
-
-
-
+```javascript
 document.write(`Seu nome em minúsculo: ${nome.toLocaleLowerCase()}<br/>`)
+```
 
-
-
-Formatando Números:
+- **Formatando Números:**
 
 var n = 1541.5
 
-**n.toFixed(2)** – para formatar o número apresentando com a quantidade de casas decimais informada dentro do parênteses, nesse caso, duas casa decimais.
+**n.toFixed(2)** – Para formatar o número apresentando com a quantidade de casas decimais informada dentro do parênteses, nesse caso, duas casas decimais:
 
+**.replace(‘’, ‘’)** - Troca o que está dentro do primeiro parâmetro pelo o que está no segundo.
 
-
-**.replace(‘’, ‘’)** - troca o que está dentro das primeiras aspas pelo o que está na segunda.
-
-
-
-**Find out the proper way to replace all occurrences of a string in plain JavaScript, from regex to other approaches**
-
-https://flaviocopes.com/how-to-replace-all-occurrences-string-javascript/
-
-
+**Find out the proper way to replace all occurrences of a string in plain JavaScript, from regex to other approaches** - [link](https://flaviocopes.com/how-to-replace-all-occurrences-string-javascript/)
 
 **n.toFixed(2).replace(‘.’, ‘,’)** - nesse caso trocará o ponto pela vírgula.
 
-
-
 **Para converter o número para moeda:**
 
-**n.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})**
+- Real:
 
-'R$ 1.541,50'
+```javascript
+n.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})
+```
 
-**n.toLocaleString('pt-BR', {style: 'currency', currency: 'USD'})**
+```shell
+R$ 1.541,50
+```
 
-'US$ 1.541,50'
+- Dólar:
 
-**n.toLocaleString('pt-BR', {style: 'currency', currency: 'EUR'})**
+```javascript
+n.toLocaleString('pt-BR', {style: 'currency', currency: 'USD'})
+```
 
-'€ 1.541,50'
+```shell
+US$ 1.541,50
+```
 
+- Euro:
 
+```javascript
+n.toLocaleString('pt-BR', {style: 'currency', currency: 'EUR'})
+```
 
-- ​	**Aula 07 – Operadores (Parte 1)**
+```shell
+€ 1.541,50
+```
+
+## Aula 07 – Operadores (Parte 1) - PAREI
 
 **Tipos de Operadores:**
 
@@ -914,9 +875,9 @@ switch (diaSemana) {
 ​	<head>
 
 		<meta charset="UTF-8">
-
+	
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-
+	
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 ​		<title>Modelo de Exercício</title>
@@ -936,13 +897,13 @@ switch (diaSemana) {
 ​	<section>
 
 		<div>
-
+	
 			<p>Testando</p>
 
 ​		</div>
 
 		<div>
-
+	
 			<p>Hello</p>
 
 ​		</div>
