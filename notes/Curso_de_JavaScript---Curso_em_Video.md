@@ -198,84 +198,64 @@ n.toLocaleString('pt-BR', {style: 'currency', currency: 'EUR'})
 € 1.541,50
 ```
 
-## Aula 07 – Operadores (Parte 1) - PAREI
+## Aula 07 – Operadores (Parte 1) 
 
 **Tipos de Operadores:**
 
-\- Aritméticos;
+- Aritméticos;
+- Atribuição;
+- Relacionais;
+- Lógicos;
+- Ternário.
 
-\- Atribuição;
+### Aritméticos (binários):
 
-\- Relacionais;
+5 **+** 2 = 7 **→  Soma**
 
-\- Lógicos;
+5 **-** 2 = 3 **→ Subtração**
 
-\- Ternário.
+5 ***** 2 = 10 **→ Multiplicação**
 
+5 **/** 2 = 2.5 **→ Divisão real**
 
+5 **%** 2 = 1 **→ Divisão inteira**
 
-- ​	**Aritméticos (binários):**
-
-5 **+** 2 **→** 7 **→  Soma**
-
-5 **-** 2 **→** 3 **→ Subtração**
-
-5 ***** 2 **→** 10 **→ Multiplicação**
-
-5 **/** 2 **→** 2.5 **→ Divisão real**
-
-5 **%** 2 **→** 1 **→ Divisão inteira**
-
-5 ***\*** 2 **→** 25 **→ Potência**
-
-
+5 ***\*** 2 = 25 **→ Potência**
 
 Cuidado com a **ordem de precedência** dos operadores, é a mesma da matemática.
 
-**1º ()**
+**1º → ( )**
 
-**2º \****
+**2º → \****
 
-**3º \* / %**
+**3º → \* / %**
 
-**4º + -**
+**4º → + -**
 
-- ​	**Atribuição:**
+###  Atribuição:
 
+| **Auto-atribuições** | **Auto-atribuições** |
+| :------------------: | :------------------: |
+|      **Normal**      |   **Simplificada**   |
+|      var n = 3       |                      |
+|  n = n + 4 **→** 7   |  n += 4 → 		7  |
+|  n = n – 5 **→** 2   |  n -= 5 → 		2  |
+|  n = n * 4 **→** 8   |  n *= 4 → 		8  |
+|  n = n / 2 **→** 4   |  n /= 2 → 		4  |
+|   n = n ** 2 → 16    | n **= 2 → 		16 |
+|    n = n % 5 → 1     |  n %= 5 → 		1  |
 
+|    **Incremento**     | **Incremento** |
+| :-------------------: | :------------: |
+|       var x = 5       |                |
+|     x = x + 1 → 6     |      x++       |
+| x = x – 1 → 		5 |      x--       |
 
-| **Auto-atribuições**      |                              |
-| ------------------------- | ---------------------------- |
-| **Normal**                | **Simplificada**             |
-| var 		n = 3         |                              |
-| n 		= n + 4 **→** 7 | n 		+= 4 → 		7   |
-| n 		= n – 5 **→** 2 | n 		-= 5 → 		2   |
-| n 		= n * 4 **→** 8 | n 		*= 4 → 		8   |
-| n 		= n / 2 **→** 4 | n 		/= 2 → 		4   |
-| n 		= n ** 2 → 16   | n 		**= 2 → 		16 |
-| n 		= n % 5 → 1     | n 		%= 5 → 		1   |
+## Aula 08 - Operadores (Parte 2)
 
+### Relacionais:
 
-
-
-
-| **Incremento**                |      |
-| ----------------------------- | ---- |
-| var 		x = 5             |      |
-| x 		= x + 1 → 6         | x++  |
-| X 		= x – 1 → 		5 | x--  |
-
-
-
-
-
-- ​	**Aula 08 - Operadores (Parte 2)**
-
-- ​	**Relacionais:**
-
-Para toda expressão que tenha um operador realcional a ela, o seu resultado será sempre um valor booleano.
-
-
+Para toda expressão que tenha um operador relacional a ela, o seu resultado será sempre um valor booleano.
 
 5 > 2 → true
 
@@ -289,9 +269,7 @@ Para toda expressão que tenha um operador realcional a ela, o seu resultado ser
 
 4 != 4 → false
 
-
-
-**Relacionais de Identidade:**
+### Relacionais de Identidade:
 
 **Indêntico** → mesmo valor e mesmo tipo.
 
@@ -311,49 +289,37 @@ Para toda expressão que tenha um operador realcional a ela, o seu resultado ser
 
 5 !== 5 → false
 
-
-
-- ​	**Lógicos:**
+### Lógicos:
 
 **! → negação (não) → operador unário.**
 
 | !true  | false |
-| ------ | ----- |
+| :----: | :---: |
 | !false | true  |
-
-
-
-
 
 **&& → conjunção (e) → operador binário.**
 
-| true 		&& true   | true  |
-| ---------------------- | ----- |
-| true 		&& false  | false |
-| false 		&& true  | false |
-| false 		&& false | false |
-
-
+|  true && true  | true  |
+| :------------: | :---: |
+| true && false  | false |
+| false && true  | false |
+| false && false | false |
 
 **|| → disjunção (ou) → operador binário.**
 
-| true 		\|\| true   | True  |
-| ------------------------ | ----- |
-| true 		\|\| false  | True  |
-| false 		\|\| true  | True  |
-| false 		\|\| false | false |
-
-
+|  true \|\| true  | True  |
+| :--------------: | :---: |
+| true \|\| false  | True  |
+| false \|\| true  | True  |
+| false \|\| false | false |
 
 **Ordem de precedência dos lógicos:**
 
-1º não (!)
+1º → não (!)
 
-2º e (&&)
+2º → e (&&)
 
-3º ou (||)
-
-
+3º → ou (||)
 
 **Ordem de precedência dos operadores:**
 
@@ -363,17 +329,15 @@ Para toda expressão que tenha um operador realcional a ela, o seu resultado ser
 
 3º operadores lógicos
 
-
-
-- ​	**Ternário:**
+### Ternário:
 
 teste **?** true **:** false
 
-média >= 7.0 **?** “Aprovado” **:** “Reprovado”
+```javascript
+média >= 7.0 ? “Aprovado” : “Reprovado”
+```
 
-
-
-- ​	**Aula 09 – Introdução ao DOM**
+## Aula 09 – Introdução ao DOM
 
 Document Object Model
 
@@ -381,96 +345,74 @@ Document Object Model
 
 Manipulando DOM
 
+### DOM → Documente Object Model:
 
+**Modelo de objetos para documentos**. Conjunto de objetos dentro do navegador que vai dar acesso aos componentes internos do seu website. DOM não funciona dentro do Node.js. Funciona quando rodamos JavaScript dentro do navegador.
 
-**DOM → Documente Object Model:**
-
-**Modelo de** **o****bjetos para documentos**. Conjunto de objetos dentro do navegador que vai dar acesso aos componentes internos do seu website. DOM não funciona dentro do Node.js. Funciona quando rodamos JavaScript dentro do navegador.
-
-
-
-**Árvore DOM:**
+### Árvore DOM:
 
 window – raiz do DOM. Tudo dentro do JavaScript está dentro do window.
 
-- ​	Window
-  - ​		location
-  - ​		document
-    - ​			html
-      - ​				head
-        - ​					meta
-        - ​					title
-      - ​				body
-        - ​					h1
-        - ​					p
-        - ​					p
-          - ​						strong
-        - ​					div
-  - ​		history
-
-
+- Window
+  - location
+  - document
+    - html
+      - head
+        - meta
+        - title
+      - body
+        - h1
+        - p
+        - p
+          - strong
+        - div
+  - history
 
 **Selecionando:** Métodos de acesso para navegar entre cada elemento da árvore DOM.
 
 Métodos:
 
-- ​	**por Marca**
+- **por Marca**
 
 getElementsByTagName()
 
-
-
+```javascript
 var p1 = window.document.getElementsByTagName('p')[1]
-
 window.document.write('Está escrito assim: '+p1.innerText)
-
 window.document.write('Puxando a formatação: '+p1.innerHTML)
+```
 
-
-
-- ​	**por ID**
+- **por ID**
 
 getElementById() - Posso identificar um elemento por id e acessá=lo através do getElementByld().
 
-
-
+```html
 <div id="mensagem">Clique em mim</div>
-
 var d = window.document.getElementById('mensagem')
-
 d.style.background = 'purple'
+```
 
-
-
-- ​	**por Nome**
+- **por Nome**
 
 getElementsByName() - Para acessar pelo nome do elemento.
 
-
-
+```html
 <div name="mensagem">Clique em mim</div>
-
 var d = window.document.getElementsByName('mensagem')[0]
-
 d.innerText = "Hello, World!"
+```
 
-
-
-- ​	**por Classe**
+- **por Classe**
 
 getElementsByClassName()
 
-
-
+```html
 <div class="mensagem">Clique em mim</div>
-
 var d = window.document.getElementsByClassName('mensagem')[0]
-
 d.style.background = "pink"
+```
 
-
-
-- ​	**por Seletor**
+- **por Seletor**
 
 querySelector()
 
@@ -478,456 +420,277 @@ querySelectorAll()
 
 Toda div é representada por ‘#’ e toda class é representada por ‘.’.
 
-
-
+```html
 <div id="mensagem">Clique em mim</div>
-
 var d = window.document.querySelector('div#mensagem')
-
 d.style.color = 'blue'
+```
 
-
-
+```html
 <div class="mensagem">Clique em mim</div>
-
 var d = window.document.querySelector('div.mensagem')
-
 d.style.color = 'yellow'
+```
 
-
-
-
-
-
-
-- ​	**Aula 10 - Eventos DOM**
+## Aula 10 - Eventos DOM
 
 Eventos DOM
 
 Evento é tudo aquilo que pode acontecer com um elemento.
 
-https://developer.mozilla.org/pt-BR/docs/Web/Events
+[Events](https://developer.mozilla.org/pt-BR/docs/Web/Events)
 
-
-
-**Função:**
+### Função:
 
 Conjunto de códigos/linhas que vão ser executadas só quando o evento ocorrer.
 
-**Function ação(parâmetros){}**
+**Function ação(parâmetros){ }**
 
-
-
+```javascript
 function ação(parâmetro){
-
-​	código
-
+	código
 }
+```
 
 **Exemplo de interação no HTML:**
 
-
-
+```html
 <body>
-
 	<div id="area" onclick="clicar()"onmouseenter="entrar()" onmouseout="sair()">
-
-​	Interaja...
-
-​	</div>
-
+	Interaja...
+	</div>
 <script>
-
-​	function clicar() {
-
-​		var area = window.document.getElementById("area");
-
-​		area.innerText = "Clicou"
-
-​		area.style.background = "red"
-
-​	}
-
-​	function entrar(){
-
-​		var area = window.document.getElementById("area");
-
-​		area.innerText = "Entrou!"
-
-​	}
-
-​	function sair(){
-
-​		var area = window.document.getElementById("area");
-
-​		area.innerText = "Saiu!!"
-
-​		area.style.background = "green"
-
-​	}
-
+	function clicar() {
+		var area = window.document.getElementById("area");
+		area.innerText = "Clicou"
+		area.style.background = "red"
+	}
+	function entrar(){
+		var area = window.document.getElementById("area");
+		area.innerText = "Entrou!"
+	}
+	function sair(){
+		var area = window.document.getElementById("area");
+		area.innerText = "Saiu!!"
+		area.style.background = "green"
+	} 
 </script>
-
 </body>
-
-
+```
 
 **Exemplo de interação no próprio JavaScript:**
 
-
-
+```html
 <body>
-
 	<div id="area">
-
-​		Interaja...
-
-​	</div>
-
+		Interaja...
+	</div>
 <script>
-
-​	var area = window.document.getElementById("area");
-
-​	area.addEventListener("click", clicar)
-
-​	area.addEventListener("mouseenter", entrar)
-
-​	area.addEventListener("mouseout", sair)
-
-​	function clicar() {
-
-​		area.innerText = "Clicou"
-
-​		area.style.background = "red"
-
-​	}
-
-​	function entrar(){
-
-​		area.innerText = "Entrou!"
-
-​	}
-
-​	function sair(){
-
-​		area.innerText = "Saiu!!"
-
-​		area.style.background = "green"
-
-​	}
-
+	var area = window.document.getElementById("area");
+	area.addEventListener("click", clicar)
+	area.addEventListener("mouseenter", entrar)
+	area.addEventListener("mouseout", sair)
+	function clicar() {
+		area.innerText = "Clicou"
+		area.style.background = "red"
+	}
+	function entrar(){
+		area.innerText = "Entrou!"
+	}
+	function sair(){
+		area.innerText = "Saiu!!"
+		area.style.background = "green"
+	} 
 </script>
-
 </body>
-
-
+```
 
 **Detectando erros**:
 
 Ao executar um código e perceber que ele não funcionou do jeito programado, você pode clicar com o botão direito do mouse na página e clicar em **inspencionar**. Irá abrir o **DevTools** e no final do **DevTools**, na aba **console** será apresentado o erro e aonde está acontecendo.
 
+## Aula 11 – Condições (Parte 1)
 
+### Sequências
 
-- ​	**Aula 11 – Condições (Parte 1)**
-
-**Sequências**
-
+```javascript
 var n = 2
-
 n += 2
-
 window.alert(n)
+```
 
+### Condições
 
-
-**Condições**
-
+```javascript
 if (condição){
-
-​	true
-
-}else{
-
-​	false
-
-}
-
-
-
-**Tipos de Condição**
-
-
-
-**Condição simples**
-
-if (condição){
-
-​	true
-
-}
-
-
-
-**Condição composta**
-
-if (condição){
-
-​	true
-
-}else{
-
-​	false
-
-}
-
-
-
-var idade = 17
-
-if(idade < 18){
-
-​	console.log('Menor de idade!')
-
-}else{
-
-​	console.log('Maior de idade!')
-
-}
-
-
-
-- ​	**Aula 12 - Condições (Parte 2)**
-
-**Condição Aninhada**
-
-if(condição1){
-
-​	bloco 1
-
+	true
 } else {
-
-​	if(condição 2){
-
-​		bloco 2
-
-​	}else{
-
-​		bloco 3
-
-​	}
-
+	false
 }
+```
 
+### Tipos de Condição
 
+- **Condição simples**
 
+```javascript
+if (condição){
+	true
+}
+```
+
+- **Condição composta**
+
+```javascript
+if (condição){
+	true
+} else {
+	false
+}
+```
+
+```javascript
+var idade = 17
+if(idade < 18){
+	console.log('Menor de idade!')
+} else {
+	console.log('Maior de idade!')
+}
+```
+
+## Aula 12 - Condições (Parte 2)
+
+- **Condição Aninhada**
+
+```javascript
+if(condição1){
+	bloco 1
+} else {
+	if(condição 2){
+		bloco 2
+	} else {
+		bloco 3
+	}
+}
+```
+
+```javascript
 var idade = 66
-
 console.log(`Você tem ${idade} anos.`)
-
 if(idade < 16){
-
-​	console.log('Não vota!')
-
-}else if(idade < 18 || idade > 65){
-
-​	console.log('Voto opcional!')
-
-}else{
-
-​	console.log('Voto obrigatório')
-
+	console.log('Não vota!')
+} else if (idade < 18 || idade > 65){
+	console.log('Voto opcional!')
+} else {
+	console.log('Voto obrigatório')
 }
+```
 
-
-
+```javascript
 var agora = new Date()
-
 var hora = agora.getHours()
-
 var minutos = agora.getMinutes()
-
 var segundos = agora.getSeconds()
-
 console.log(`Agora são exatamente ${hora}h${minutos}min${segundos}seg.`)
-
 if (hora < 12) {
-
-​	console.log('Bom dia!')
-
+	console.log('Bom dia!')
 } else if (hora <= 18){
-
-​	console.log('Boa tarde')
-
-}else{
-
-​	console.log('Boa noite')
-
+	console.log('Boa tarde')
+} else {
+	console.log('Boa noite')
 }
+```
 
+- **Condição Multipla –** usada para valores fixos.
 
-
-**Condição Multipla –** usada para valores fixos.
-
+```javascript
 switch(expressão){
-
-​	case valor 1:
-
-​		bloco
-
-​		break
-
-​	case valor 2:
-
-​		bloco
-
-​		break
-
-​	case valor 3: 
-
-​		bloco
-
-​		break
-
-​	default:
-
-​		bloco
-
-​		break
-
+	case valor 1:
+		bloco
+	break
+	case valor 2:
+		bloco
+	break
+	case valor 3: 
+		bloco
+	break
+	default:
+		bloco
+	break
 }
+```
 
-
-
+```javascript
 var agora = new Date()
-
 var diaSemana = agora.getDay()
-
-
-
 console.log(diaSemana)
-
 switch (diaSemana) {
-
-​	case 0:
-
-​		console.log('Domingo')
-
-​		break;
-
-​	case 1:
-
-​		console.log('Segunda')
-
-​		break;
-
-​	case 2:
-
-​		console.log('Terça')
-
-​		break;
-
-​	case 3:
-
-​		console.log('Quarta')
-
-​		break;
-
-​	case 4:
-
-​		console.log('Quinta')
-
-​		break;
-
-​	case 5:
-
-​		console.log('Sexta')
-
-​		break;
-
-​	case 6:
-
-​		console.log('Sábado')
-
-​		break;
-
-​	default:
-
-​		console.log('ERRO! Dia inválido!')
-
-​		break;
-
+	case 0:
+		console.log('Domingo')
+	break;
+	case 1:
+		console.log('Segunda')
+	break;
+	case 2:
+		console.log('Terça')
+	break;
+	case 3:
+		console.log('Quarta')
+	break;
+	case 4:
+		console.log('Quinta')
+	break;
+	case 5:
+		console.log('Sexta')
+	break;
+	case 6:
+		console.log('Sábado')
+	break;
+	default:
+		console.log('ERRO! Dia inválido!')
+	break;
 }
+```
 
-
-
-- ​	**Exercícios Javascript – Parte 1**
+## Exercícios Javascript – Parte 1
 
 **Modelo**
 
 **HTML**
 
-
-
+```html
 <!DOCTYPE html>
-
 <html lang="pt-BR">
-
-​	<head>
-
+	<head>
 		<meta charset="UTF-8">
-	
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-​		<title>Modelo de Exercício</title>
-
-​		<link rel="stylesheet" href="estilo.css">
-
-​	</head>
-
+		<title>Modelo de Exercício</title>
+		<link rel="stylesheet" href="estilo.css">
+	</head>
 <body>
-
-​	<header>
-
-​		<h1>Título</h1>
-
-​	</header>
-
-​	<section>
-
+	<header>
+		<h1>Título</h1>
+	</header>
+	<section>
 		<div>
-	
 			<p>Testando</p>
-
-​		</div>
-
+		</div>
 		<div>
-	
 			<p>Hello</p>
-
-​		</div>
-
-​	</section>
-
-​	<footer>
-
+		</div>
+	</section>
+	<footer>
 		<p>&copy;CursoemVídeo</p>
-
-​	</footer>
-
+	</footer>
 	<script src="script.js"></script>
-
 </body>
-
 </html>
-
-
+```
 
 **CSS**
 
-
-
+```css
 body{
 
 ​	background:rgb(88, 208, 212);
@@ -969,18 +732,13 @@ footer{
 ​	font-style: italic;
 
 }
+```
 
+## Exercícios JavaScript – Parte 2
 
+## Exercícios JavaScript – Parte 3
 
-- ​	**Exercícios JavaScript – Parte 2**
-
-
-
-- ​	**Exercícios JavaScript – Parte 3**
-
-
-
-- ​	**Aula 13 – Repetições – Parte 1**
+## Aula 13 – Repetições – Parte 1 - PAREI
 
 **Repetições/Laços**
 
