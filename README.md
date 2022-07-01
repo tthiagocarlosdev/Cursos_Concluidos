@@ -13,7 +13,7 @@
 - Linux (40 horas) - Curso de sistema operacional Linux;
   - Atividades - [clique aqui](https://github.com/tthiagocarlosdev/Cursos_Concluidos/blob/main/notes/Curso_de_Linux---Curso_em_Video.md)
 - Curso HTML5 e CSS3: módulo 1 (40 horas) - Curso de linguagem de marcação de HiperTexto e estilização de componentes escritos em linguagens de marcação;
-  - Atividades - [clique aqui](https://github.com/tthiagocarlosdev/Cursos_Concluidos/blob/main/notes/HTML5_e_CSS3_módulo_01---Curso_em_vídeo.md)
+  - Atividades - [clique aqui](https://github.com/tthiagocarlosdev/Cursos_Concluidos/blob/main/notes/HTML5_e_CSS3_modulo_01---Curso_em_video.md)
 - Javascript (40 horas) - Curso de linguagem JavaScript.
   - Atividades - [clique aqui](https://github.com/tthiagocarlosdev/Cursos_Concluidos/blob/main/notes/Curso_de_JavaScript---Curso_em_Video.md)
 
@@ -45,6 +45,8 @@
 
 **Cursos:** 
 
+- Curso de HTML Para Completos Iniciantes
+  - Atividades - [clique aqui](https://github.com/tthiagocarlosdev/Cursos_Concluidos/blob/main/notes/Curso_de_HTML---Dicas_para_Devs.md)
 - Formulário com HTML, CSS e JavaScript
   - Formulário - [clique aqui](https://github.com/tthiagocarlosdev/TESTES/tree/main/dicasParaDevs/formulario_HTML_CSs_JavaScript)
 - Curso de React
