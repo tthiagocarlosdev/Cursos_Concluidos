@@ -49,7 +49,10 @@
   - Atividades - [clique aqui](https://github.com/tthiagocarlosdev/Cursos_Concluidos/blob/main/notes/Curso_de_HTML---Dicas_para_Devs.md)
 - Formulário com HTML, CSS e JavaScript
   - Formulário - [clique aqui](https://github.com/tthiagocarlosdev/TESTES/tree/main/dicasParaDevs/formulario_HTML_CSs_JavaScript)
+- Curso de CSS Para Completos Iniciantes
+  - Atividades - [clique aqui](https://github.com/tthiagocarlosdev/Cursos_Concluidos/blob/main/notes/Curso_de_CSS---Dicas_para_Devs.md)
 - Curso de React
+  
   - Atividades  [clique aqui](https://github.com/tthiagocarlosdev/Cursos_Concluidos/blob/main/notes/Curso_de_React_Para_Completos_Iniciantes---Dicas_para_Devs.md)
 - React Hooks
   - Atividades - [clique aqui](https://github.com/tthiagocarlosdev/Cursos_Concluidos/blob/main/notes/React_Hooks---Dicas_para_Devs.md)
